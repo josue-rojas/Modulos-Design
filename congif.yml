@@ -1,0 +1,4 @@
+name: Showcase
+markdown: kramdown
+plugins:
+  - jekyll-coffeescript
