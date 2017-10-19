@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /Showcase/readme
+permalink: /readme
 title: readme
 ---
 
