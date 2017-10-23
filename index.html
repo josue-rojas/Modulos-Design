@@ -4,5 +4,5 @@ title: Showcase
 permalink: /
 ---
 <div>
-<a href='{% if site.url=='http://localhost:400'%}/Showcase{%endif%}/readme'>Readme</a>
+<a href='{% if site.host !="127.0.0.1" %}/Showcase{%endif%}/readme'>Readme</a>
 </div>
