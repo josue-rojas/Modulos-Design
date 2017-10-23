@@ -1,0 +1,5 @@
+<div class='slideshow'>
+  {% for image in site.data[page.title].partials.slideshow %}
+  <img src='/resources/{{image}}' style='width:300px;'>
+  {% endfor %}
+</div>
