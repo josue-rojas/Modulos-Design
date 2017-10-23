@@ -1,14 +1,18 @@
+{% if site.url =="https://josuerojasrojas.github.io" %}
+{% assign root = '/Showcase'%}
+{%endif%}
+
 <!DOCTYPE html>
 	<html>
 		<head>
 			{% include resources.html %}
 			<!--  imports customs css for page-->
 			{% for  stylesheet in site.data[page.title].scss %}
-				<link rel="stylesheet" href='/resources/{{stylesheet}}'>
+				<link rel="stylesheet" href='{{root}}/resources/{{stylesheet}}'>
 			{% endfor %}
 			<!--  imports customs js for page-->
 			{% for j in site.data[page.title].js %}
-				<script src='/resources/{{j}}'></script>
+				<script src='{{root}}/resources/{{j}}'></script>
 			{% endfor %}
 			<title>{{ page.title }}</title>
 		</head>

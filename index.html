@@ -3,6 +3,10 @@ layout: default
 title: Showcase
 permalink: /
 ---
+{% if site.url =="https://josuerojasrojas.github.io" %}
+{% assign root = '/Showcase'%}
+{%endif%}
+
 <div>
-<a href='{% if site.url =="https://josuerojasrojas.github.io" %}/Showcase{%endif%}/readme'>Readme</a>
+<a href='{{root}}/readme'>Readme</a>
 </div>
