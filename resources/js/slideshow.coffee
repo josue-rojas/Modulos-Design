@@ -9,21 +9,21 @@ document.addEventListener "DOMContentLoaded", ->
     targetSlideshow = $(targetSlideshow).closest('.slideshow')
     current = parseInt(targetSlideshow.attr('current'))
     length = targetSlideshow.data('length')
-    timeoutFunctionIndex = parseInt(targetSlideshow.data('timeoutFunctionID'))
+    index = parseInt(targetSlideshow.data('index'))
     targetSlideshow.find('[data-pos='+current+']').removeClass('active')
     current = if current+change < 0 then length-1 else (current+change)%length
     targetSlideshow.find('[data-pos='+current+']').addClass('active')
     targetSlideshow.attr('current', current)
     if manuelChange # pause if manuel change
-      clearTimeout(timeoutFunctions[timeoutFunctionIndex])
+      clearTimeout(timeoutFunctions[index])
       targetSlideshow.addClass('pause')
       return ''
     speed = targetSlideshow.data('speed')
-    timeoutFunctions[timeoutFunctionIndex] = setTimeout(changeSlide,speed, change, targetSlideshow, manuelChange, timeoutFunctionIndex)
+    timeoutFunctions[index] = setTimeout(changeSlide,speed, change, targetSlideshow, manuelChange)
 
   # autostart slidesshows who do not have pause
   $('.slideshow').each (index) ->
-    $(this).attr('data-timoutFunctionID', index)
+    $(this).attr('data-index', index)
     timeoutFunction = ''
     timeoutFunctions.push(timeoutFunction)
     if $(this).hasClass('pause') then return
