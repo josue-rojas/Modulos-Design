@@ -1,8 +1,9 @@
 ---
   scss:
-    "css/slideshow.css"
+    - "css/main.css"
+    - "css/slideshow.css"
   js:
-    "js/slideshow.js"
+    - "js/slideshow.js"
   partials:
     -
       partial-name: "slideshow"

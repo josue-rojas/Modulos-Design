@@ -1,0 +1,9 @@
+---
+---
+
+// this is to import all main stuff like sizes and mixins
+// most pages should have this most important breakpoints is included in mixins
+// might later make this default in _includes/resources.html
+
+@import 'sizes.sass';
+@import 'mixins.sass';
