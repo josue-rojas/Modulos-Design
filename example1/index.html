@@ -7,7 +7,8 @@ permalink: /example1
 the root var is instatiated again and gets pass through the partials using {(percent) (percent)}
 {% endcomment %}
 {% include root.html %}
-<!-- {{site.data[page.title].partials[0].images}} -->
+
+<!-- partials insert -->
 {% for part in site.data[page.title].partials %}
   {% assign id=part.id %}
   {% assign p=part.partial-name| append: '.html'%}
