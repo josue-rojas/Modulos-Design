@@ -13,7 +13,8 @@ this folder contains configs for certain things of the page
 > include all js files to be included
 
 ### Partials
-> inlude all partials to be rendered
+> Include all partials to be rendered
+> Important: every partial has an id which is just and position in the list. This is used to get any resources that it has
 
 - slideshow
  - images: (Necessary) list of images locations
