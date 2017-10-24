@@ -4,4 +4,7 @@ title: example1
 permalink: /example1
 ---
 
-{% include slideshow.html %}
+{% for part in site.data[page.title].partials %}
+  {% assign p=part[0]| append: '.html'%}
+  {%include {{p}}%}
+{% endfor %}
