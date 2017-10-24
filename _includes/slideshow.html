@@ -4,6 +4,10 @@
 
 <div class='slideshow'>
   {% for image in site.data[page.title].partials.slideshow %}
-  <img src='{{root}}/resources/{{image}}' style='width:300px;'>
+  <img src='{{root}}/resources/{{image}}' data-pos='{{forloop.index0}}' class='slide 
+  {% if forloop.index0==0%}
+  active
+  {% endif %}
+  '>
   {% endfor %}
 </div>
