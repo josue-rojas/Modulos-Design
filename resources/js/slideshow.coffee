@@ -1,27 +1,35 @@
 ---
 ---
 document.addEventListener "DOMContentLoaded", ->
-  # current = 0
-  $slides = $('.slideshow .slide')
+  timeoutFunctions = [] #holds the variables for timeout funtion
 
-  window.changeSlide = (change=1, targetSlideshow) ->
-    # console.log(targetSlideshow)
-    targetSlideshow = if $(targetSlideshow).is($('.slideshow')) then $(targetSlideshow) else $(targetSlideshow).closest('.slideshow')
-    # console.log(targetSlideshow)
-    # console.log(targetSlideshow)
-    if targetSlideshow.hasClass('pause') then return false
-    speed = targetSlideshow.data('speed')
+  # --------------------
+  # function changes slides in targetSlideshow
+  window.changeSlide = (change=1, targetSlideshow, manuelChange=false) ->
+    targetSlideshow = $(targetSlideshow).closest('.slideshow')
     current = parseInt(targetSlideshow.attr('current'))
     length = targetSlideshow.data('length')
-    # console.log(targetSlideshow.find('[data-pos='+current+']'))
+    timeoutFunctionIndex = parseInt(targetSlideshow.data('timeoutFunctionID'))
     targetSlideshow.find('[data-pos='+current+']').removeClass('active')
-    # console.log('change',(current+change))
     current = if current+change < 0 then length-1 else (current+change)%length
     targetSlideshow.find('[data-pos='+current+']').addClass('active')
     targetSlideshow.attr('current', current)
-    console.log((current+change)%length)
-  # $('.slideshow').each ->
-  #   changeSlide(0, this)
+    if manuelChange # pause if manuel change
+      clearTimeout(timeoutFunctions[timeoutFunctionIndex])
+      targetSlideshow.addClass('pause')
+      return ''
+    speed = targetSlideshow.data('speed')
+    timeoutFunctions[timeoutFunctionIndex] = setTimeout(changeSlide,speed, change, targetSlideshow, manuelChange, timeoutFunctionIndex)
+
+  # autostart slidesshows who do not have pause
+  $('.slideshow').each (index) ->
+    $(this).attr('data-timoutFunctionID', index)
+    timeoutFunction = ''
+    timeoutFunctions.push(timeoutFunction)
+    if $(this).hasClass('pause') then return
+    changeSlide(1, this, false)
+    return
+
 
   # -------------------
   # settings

@@ -19,6 +19,6 @@
       images:
         - "example1/test_3.jpg"
         - "example1/test_4.jpg"
-      speed: 3000
+      speed: 3500
       auto: true
       id: 1

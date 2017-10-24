@@ -11,12 +11,12 @@
   <!-- arrow or buttons to switch slide -->
   <div class='button-wrapper'>
     <div class='left-slide slide-button'>
-      <div class='svg-wrapper' onclick='changeSlide(-1, this)'>
+      <div class='svg-wrapper' onclick='changeSlide(-1, this,true)'>
         {% include svg/chevron-left.svg %}
       </div>
     </div>
     <div class='right-slide slide-button'>
-      <div class='svg-wrapper' onclick='changeSlide(1, this)'>
+      <div class='svg-wrapper' onclick='changeSlide(1, this, true)'>
         {% include svg/chevron-right.svg %}
       </div>
     </div>
