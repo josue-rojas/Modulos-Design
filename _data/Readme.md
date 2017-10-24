@@ -16,5 +16,8 @@ this folder contains configs for certain things of the page
 > inlude all partials to be rendered
 
 - slideshow
- - Need list of images to use.
+ - images: (Necessary) list of images locations
+ - Options:
+  - speed: is speed (milliseconds) at which slide changes, default is 3000
+  - auto: boolean autostart, default is true
  - check out example1.yml

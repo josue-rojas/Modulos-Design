@@ -5,7 +5,10 @@
     "js/slideshow.js"
   partials:
     slideshow:
-      - "example1/test_1.jpg"
-      - "example1/test_2.jpg"
-      - "example1/test_3.jpg"
-      - "example1/test_4.jpg"
+      images:
+        - "example1/test_1.jpg"
+        - "example1/test_2.jpg"
+        - "example1/test_3.jpg"
+        - "example1/test_4.jpg"
+      speed: 2000
+      auto: true

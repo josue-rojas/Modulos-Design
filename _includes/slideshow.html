@@ -1,5 +1,25 @@
-<div class='slideshow'>
-  {% for image in site.data[page.title].partials.slideshow %}
+<div class='slideshow' data-speed={{site.data[page.title].partials.slideshow.speed}}
+data-auto={{site.data[page.title].partials.slideshow.auto}}>
+  <!-- arrow or buttons to switch slide -->
+  <div class='button-wrapper'>
+    <div class='left-slide slide-button'>
+      <div class='svg-wrapper' onclick='changeSlide(-1, true)'>
+        {% include svg/chevron-left.svg %}
+      </div>
+    </div>
+    <div class='right-slide slide-button' onclick='changeSlide(1,true)'>
+      <div class='svg-wrapper' onclick='changeSlide(1, true)'>
+        {% include svg/chevron-right.svg %}
+      </div>
+    </div>
+    <div class='pause-slide slide-button'>
+      <div class='svg-wrapper' onclick='changeSlide(0, false,true)'>
+        {% include svg/primitive-square.svg %}
+      </div>
+    </div>
+  </div>
+  <!-- images for slide -->
+  {% for image in site.data[page.title].partials.slideshow.images %}
   <img src='{{root}}/resources/{{image}}' data-pos='{{forloop.index0}}' class='slide
   {% if forloop.index0==0%}
   active
