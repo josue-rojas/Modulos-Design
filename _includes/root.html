@@ -1,0 +1,10 @@
+{% comment%}
+this file is to know if the root of the folder is local or Showcase
+when the site is render on github it would chose /Showcase and render/load everything right
+NOTE: this does not go through the double { it will only go through { with percent sign if you want to use it on other you must include it in ther
+{% endcomment%}
+
+{% if site.url =="https://josuerojasrojas.github.io" %}
+{% assign root = '/Showcase'%}
+{%endif%}
+{% assign a = 'chickens'%}

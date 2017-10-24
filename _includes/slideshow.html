@@ -1,10 +1,6 @@
-{% if site.url =="https://josuerojasrojas.github.io" %}
-{% assign root = '/Showcase'%}
-{%endif%}
-
 <div class='slideshow'>
   {% for image in site.data[page.title].partials.slideshow %}
-  <img src='{{root}}/resources/{{image}}' data-pos='{{forloop.index0}}' class='slide 
+  <img src='{{root}}/resources/{{image}}' data-pos='{{forloop.index0}}' class='slide
   {% if forloop.index0==0%}
   active
   {% endif %}
