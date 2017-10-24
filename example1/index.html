@@ -8,8 +8,9 @@ the root var is instatiated again and gets pass through the partials using {(per
 {% endcomment %}
 {% include root.html %}
 
-
+<!-- partials insert -->
 {% for part in site.data[page.title].partials %}
-  {% assign p=part[0]| append: '.html'%}
-  {% include {{p}} %}
+  {% assign id=part.id %}
+  {% assign p=part.partial-name| append: '.html'%}
+    {% include {{p}} %}
 {% endfor %}
