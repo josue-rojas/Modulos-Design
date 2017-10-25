@@ -3,7 +3,7 @@
 this folder contains configs for certain things of the page
 - To search a partial do ⌘f or open search in your browser and type in 'partial-name: [name of partial]'
 
-- you need to write all local css/scss and js files needed for the page
+- you need to write all local css/scss and js files needed for the page, Order matters
 - need to write partials in order that they would appear
   - some partials take file locations or data
 
@@ -27,15 +27,16 @@ scss:
   # IMPORTANT: every partial has an id which is just the position in the list
   # this is used to get any resources that it has from the YML
   # below is th list of partials and it's resources(if you create a new one make sure to update this)
-  - 
-    partial-name: slideshow 
+  -
+    partial-name: slideshow
     # slideshow can have multiple
-    # slideshow: imports "js/slideshow.js" "css/slideshow.css" 
+    # slideshow: imports "js/slideshow.js" "css/slideshow.css"
       images: # list of images
         - "example1/test_1.jpg"
         - "example1/test_4.jpg"
        speed: 2000 # speed in milliseconds to change slides
        auto: true # boolean of autostart slideshow
+       controls: true #boolean wether to have buttons or not (would only use if autoplay true)
        id: 0 # partials place in this list, used to load it's resources
-  - 
+  -
 ```

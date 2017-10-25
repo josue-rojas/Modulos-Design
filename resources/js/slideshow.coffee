@@ -1,9 +1,22 @@
 ---
 ---
 document.addEventListener "DOMContentLoaded", ->
+  # ---------------------------------------------------------------
+  # functions for mobile toggle controls
+  if hasTouch()
+    $('.slideshow').removeClass('hasHover')
+    $('.slideshow').on 'touchend', (event)->
+      $this = $(event.target).closest('.slideshow')
+      $buttons = $($this).find('.button-wrapper')
+      if $buttons.hasClass('toggle')
+        $buttons.removeClass('toggle')
+        return
+      $('.button-wrapper.toggle').removeClass('toggle')
+      $buttons.addClass('toggle')
+
+  # ---------------------------------------------------------------
   timeoutFunctions = [] #holds the variables for timeout funtion
 
-  # ---------------------------------
   # function changes slides in targetSlideshow
   window.changeSlide = (change=1, targetSlideshow, manuelChange=false) ->
     targetSlideshow = $(targetSlideshow).closest('.slideshow')
@@ -22,6 +35,7 @@ document.addEventListener "DOMContentLoaded", ->
     timeoutFunctions[index] = setTimeout(changeSlide,speed, change, targetSlideshow, manuelChange)
 
   # autostart slidesshows who do not have pause
+  # and mobile setup
   $('.slideshow').each (index) ->
     $(this).attr('data-index', index)
     timeoutFunction = ''

@@ -3,6 +3,7 @@
     - "css/main.css"
     - "css/slideshow.css"
   js:
+    - "js/main.js"
     - "js/slideshow.js"
   partials:
     -
@@ -13,13 +14,39 @@
         - "example1/test_3.jpg"
         - "example1/test_4.jpg"
       speed: 2000
-      auto: true
+      auto: false
+      controls: false
       id: 0
+    -
+      partial-name: "slideshow"
+      images:
+        - "example1/test_4.jpg"
+        - "example1/test_1.jpg"
+        - "example1/test_2.jpg"
+        - "example1/test_3.jpg"
+      speed: 2000
+      auto: true
+      controls: false
+      id: 1
     -
       partial-name: "slideshow"
       images:
         - "example1/test_3.jpg"
         - "example1/test_4.jpg"
+        - "example1/test_1.jpg"
+        - "example1/test_2.jpg"
       speed: 3500
       auto: true
-      id: 1
+      controls: true
+      id: 2
+    -
+      partial-name: "slideshow"
+      images:
+        - "example1/test_2.jpg"
+        - "example1/test_3.jpg"
+        - "example1/test_4.jpg"
+        - "example1/test_1.jpg"
+      speed: 4000
+      auto: false
+      controls: true
+      id: 3

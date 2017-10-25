@@ -1,4 +1,4 @@
-<div class='slideshow {% if site.data[page.title].partials[id].auto==false %} pause {% endif%}' data-speed={{site.data[page.title].partials[id].speed}}
+<div class='slideshow hasHover{% if site.data[page.title].partials[id].auto==false %} pause {% endif%}' data-speed={{site.data[page.title].partials[id].speed}}
  current=0 data-length={{ site.data[page.title].partials[id].images | size}}>
   <!-- images for slide -->
   {% for image in site.data[page.title].partials[id].images %}
@@ -8,6 +8,7 @@
     {% endif %}
     '>
   {% endfor %}
+  {% if site.data[page.title].partials[id].controls == true or site.data[page.title].partials[id].auto==false%}
   <!-- arrow or buttons to switch slide -->
   <div class='button-wrapper'>
     <div class='left-slide slide-button'>
@@ -26,4 +27,5 @@
       </div>
     </div> -->
   </div>
+{% endif %}
 </div>
