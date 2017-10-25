@@ -27,15 +27,16 @@ scss:
   # IMPORTANT: every partial has an id which is just the position in the list
   # this is used to get any resources that it has from the YML
   # below is th list of partials and it's resources(if you create a new one make sure to update this)
-  - 
-    partial-name: slideshow 
+  -
+    partial-name: slideshow
     # slideshow can have multiple
-    # slideshow: imports "js/slideshow.js" "css/slideshow.css" 
+    # slideshow: imports "js/slideshow.js" "css/slideshow.css"
       images: # list of images
         - "example1/test_1.jpg"
         - "example1/test_4.jpg"
        speed: 2000 # speed in milliseconds to change slides
        auto: true # boolean of autostart slideshow
+       controls: true #boolean wether to have buttons or not (would only use if autoplay true)
        id: 0 # partials place in this list, used to load it's resources
-  - 
+  -
 ```
