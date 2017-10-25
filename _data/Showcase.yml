@@ -1,0 +1,6 @@
+---
+  scss:
+    - "css/main.css"
+    - "css/navbar.css"
+  js:
+    - "js/main.js"
