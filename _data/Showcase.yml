@@ -2,5 +2,7 @@
   scss:
     - "css/main.css"
     - "css/navbar.css"
+    - "css/footer.css"
   js:
     - "js/main.js"
+    - "js/footer.js"

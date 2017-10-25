@@ -2,9 +2,11 @@
   scss:
     - "css/main.css"
     - "css/navbar.css"
+    - "css/footer.css"
     - "css/slideshow.css"
   js:
     - "js/main.js"
+    - "js/footer.js"
     - "js/slideshow.js"
   partials:
     -
