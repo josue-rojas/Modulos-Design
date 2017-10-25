@@ -1,0 +1,17 @@
+{% include root.html %}
+
+{% comment %}
+This template is if you do not want a Navbar or Footer
+or if you have your own footer or navbar
+{% endcomment %}
+
+<!DOCTYPE html>
+	<html>
+		<head>
+			{% include resources.html %}
+			<title>{{ page.title }}</title>
+		</head>
+		<body>
+			{{ content }}
+		</body>
+	</html>
