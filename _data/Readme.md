@@ -3,7 +3,7 @@
 this folder contains configs for certain things of the page
 - To search a partial do ⌘f or open search in your browser and type in 'partial-name: [name of partial]'
 
-- you need to write all local css/scss and js files needed for the page
+- you need to write all local css/scss and js files needed for the page, Order matters
 - need to write partials in order that they would appear
   - some partials take file locations or data
 

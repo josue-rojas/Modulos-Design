@@ -1,4 +1,4 @@
-<div class='slideshow {% if site.data[page.title].partials[id].auto==false %} pause {% endif%}' data-speed={{site.data[page.title].partials[id].speed}}
+<div class='slideshow hasHover{% if site.data[page.title].partials[id].auto==false %} pause {% endif%}' data-speed={{site.data[page.title].partials[id].speed}}
  current=0 data-length={{ site.data[page.title].partials[id].images | size}}>
   <!-- images for slide -->
   {% for image in site.data[page.title].partials[id].images %}

@@ -3,6 +3,7 @@
     - "css/main.css"
     - "css/slideshow.css"
   js:
+    - "js/main.js"
     - "js/slideshow.js"
   partials:
     -
