@@ -1,6 +1,7 @@
 ---
 ---
 
+
 document.addEventListener "DOMContentLoaded", ->
   # -----------------------------------------
   # footer reposition when window resize
@@ -21,7 +22,7 @@ document.addEventListener "DOMContentLoaded", ->
         #   $footer.removeClass 'content-footer'
         #   $footer.fadeIn 400
         state = true
-  # this doesn't work sometimes in safari for some reason cause some 'body' changes size so it gives the wrong size in the beginning
-  # so i will call this in other pages
-  footerReposition()
   $(window).resize(footerReposition)
+
+$(window).on 'load', ->
+  footerReposition()
