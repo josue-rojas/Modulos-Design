@@ -1,6 +1,7 @@
 ---
 ---
 document.addEventListener "DOMContentLoaded", ->
+  console.log($('body').height())
   # ---------------------------------------------------------------
   # functions for mobile toggle controls
   if hasTouch()

@@ -16,11 +16,15 @@ scss:
   # all css to be imported by page. (all pages import bootstrap css in default layout)
   # some partial should have it's own sass to import make sure to import it to have it's style
   # or import any that overrides
-  - "css/example.css"
+  - "css/main.css" # necessary ALWAYS
+  - "css/navbar.css" # necessary if using default layout
+  - "css/footer.css" # necessary if using default layout
   - "css/slideshow.css"
  js:
   # all javascript to be imported by page (all pages import jquery and bootstrap js in default layout)
   # some partial may have it's own js to import, make sure to import for functionality
+  - "js/main.js" # necessary if using default layout
+  - "js/footer.js" # necessary if using default layout
   - "js/slideshow.js"
  partials:
   # all partials to be rendered in page
