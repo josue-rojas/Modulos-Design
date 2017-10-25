@@ -1,10 +1,12 @@
 # About this folder:
 
 this folder contains configs for certain things of the page
+- To search a partial do ⌘f or open search in your browser and type in 'partial-name: [name of partial]'
 
 - you need to write all local css/scss and js files needed for the page
 - need to write partials in order that they would appear
   - some partials take file locations or data
+
 
 ## YML Struture/ and Partial imports
 YML files should be name the page title (will change this in case title has space remind me if i don't)
@@ -26,7 +28,9 @@ scss:
   # this is used to get any resources that it has from the YML
   # below is th list of partials and it's resources(if you create a new one make sure to update this)
   - 
-    partial-name: slideshow #slideshow can have multiple
+    partial-name: slideshow 
+    # slideshow can have multiple
+    # slideshow: imports "js/slideshow.js" "css/slideshow.css" 
       images: # list of images
         - "example1/test_1.jpg"
         - "example1/test_4.jpg"
