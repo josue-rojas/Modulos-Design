@@ -1,6 +1,3 @@
----
----
-
 # this js is for main and default js (like things every page needs)
 
 touch = false

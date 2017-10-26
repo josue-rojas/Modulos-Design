@@ -4,10 +4,10 @@
     - "css/navbar.css"
     - "css/footer.css"
     - "css/slideshow.css"
-  js:
-    - "js/main.js"
-    - "js/footer.js"
-    - "js/slideshow.js"
+  coffee:
+    - "main.coffee"
+    - "footer.coffee"
+    - "slideshow.coffee"
   partials:
     -
       partial-name: "slideshow"
