@@ -1,8 +1,4 @@
 # THINGS TO DO
-# ADD THE FSWATCH
-# CHANGE THE resources.html to take in the new coffee
-# then delete the js in yml data files
-# will leave the feature to handle js just so we can also write js
 # ADD JOIN FOR SASS
 # this is easier than coffee since you can make a new .scss file and import whatever you are going to use
 # -----------------------------------------------------------------
@@ -16,9 +12,6 @@
 # _sass for changes in sass files
 # resources/coffee for changes in coffee
 import os, yaml
-
-# if js file convert to coffee
-# https://www.npmjs.com/package/js2coffee
 
 # if css convert to sass
 # https://www.npmjs.com/package/css-scss (maybe need to write another script using js to run this if i dont find another)

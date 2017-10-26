@@ -8,10 +8,6 @@
     - "main.coffee"
     - "footer.coffee"
     - "slideshow.coffee"
-  js:
-    - "js/main.js"
-    - "js/footer.js"
-    - "js/slideshow.js"
   partials:
     -
       partial-name: "slideshow"

@@ -6,6 +6,3 @@
   coffee:
     - "main.coffee"
     - "footer.coffee"
-  js:
-    - "js/main.js"
-    - "js/footer.js"
