@@ -3,14 +3,13 @@ layout: default
 title: Showcase
 permalink: /
 ---
+{% include root.html %}
+
 <div>
 <a href='{{root}}/readme'>Readme</a>
 <br>
 <a href='{{root}}/example1'>Slideshow Example</a>
 </div>
-
-{% include root.html %}
-
 <!-- partials insert -->
 {% for part in site.data[page.title].partials %}
   {% assign id=part.id %}
