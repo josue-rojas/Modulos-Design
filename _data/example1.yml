@@ -1,9 +1,11 @@
 ---
-  scss:
-    - "css/main.css"
+  sass:
+    - "sizes.sass"
+    - "mixins.sass"
+    - "footer.sass"
+    - "slideshow.sass"
+  css:
     - "css/navbar.css"
-    - "css/footer.css"
-    - "css/slideshow.css"
   coffee:
     - "main.coffee"
     - "footer.coffee"

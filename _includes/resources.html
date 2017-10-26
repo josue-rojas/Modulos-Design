@@ -4,8 +4,11 @@
 <!-- CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 <!--  imports customs css for page-->
-{% for  stylesheet in site.data[page.title].scss %}
-  <link rel="stylesheet" href='{{root}}/resources/{{stylesheet}}'>
+<!--  fist sass -->
+<link rel="stylesheet" href="{{root}}/resources/css/{{ page.title }}.css">
+{% for  stylesheet in site.data[page.title].css %}
+<!-- then any extra css -->
+<link rel="stylesheet" href='{{root}}/resources/{{stylesheet}}'>
 {% endfor %}
 <!-- JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
