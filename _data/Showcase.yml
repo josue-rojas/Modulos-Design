@@ -3,6 +3,9 @@
     - "css/main.css"
     - "css/navbar.css"
     - "css/footer.css"
+  coffee:
+    - "main.coffee"
+    - "footer.coffee"
   js:
     - "js/main.js"
     - "js/footer.js"
