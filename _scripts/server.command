@@ -9,4 +9,5 @@ echo "watching " $coffee
 scripts="$root/_scripts"
 pythonScript="$scripts/prerun.py"
 echo "and running " $pythonScript
-jekyll server & fswatch -o -0 $coffee |  xargs -0 -n1 python $pythonScript
+
+cd $root; jekyll server & cd $scripts;fswatch -o -0 $coffee |  xargs -0 -n1 python $pythonScript

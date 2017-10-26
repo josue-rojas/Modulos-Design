@@ -16,12 +16,18 @@ NEED:
 - python 2.7
 
 #### Start
+To run with scripts
+(the scripts watch \_coffee, \_sass, and \_data to join files)
+- clone
+- MUST HAVE FSWATCH AND PYTHON 2.7
+- go to \_scripts and open server.command
 To run just
 - clone this repo
 - open terminal
 - cd into this directory
 - and type 'jekyll server'
 - finally in the browser go to http://localhost:4000/
+
 
 ### Folder structures
 
