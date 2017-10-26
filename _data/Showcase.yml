@@ -1,8 +1,10 @@
 ---
-  scss:
-    - "css/main.css"
+  sass:
+    - "sizes.sass"
+    - "mixins.sass"
+    - "footer.sass"
+  css:
     - "css/navbar.css"
-    - "css/footer.css"
   coffee:
     - "main.coffee"
     - "footer.coffee"

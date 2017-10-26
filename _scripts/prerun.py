@@ -29,6 +29,7 @@ resource_folder = project_root + '/resources/'
 js_folder = resource_folder + '/js/'
 coffee_folder = project_root + '/_coffee/'
 sass_folder = project_root + '/_sass/'
+css_folder = resource_folder + '/css/'
 
 # this file is needed for jekyll to convert coffee -> js
 coffeeFiles = ['coffee.coffee']
@@ -54,10 +55,16 @@ for file in os.listdir('_data'):
                     outputName = file.split('.yml')[0] + '.coffee'
                     os.system('echo "' + coffee + '" | xargs cat > ' + outputName)
                     os.rename(project_root+'/'+outputName, js_folder+outputName)
-                    # os.chdir(project_root)
                 # sass stuff
-                elif key == 'scss':
-                    sassList = value
+                elif key == 'sass':
+                    outputName = file.split('.yml')[0] + '.scss'
+                    scssOut = '---\n---\n'+''.join(['@import "'+ sass + '";\n' for sass in value])
+                    outPut = open(outputName, "w")
+                    outPut.write(scssOut)
+                    os.rename(project_root+'/'+outputName, css_folder+outputName)
+                    # print scssOut
+                # elif key == 'sass':
+                #     sassList = value
             #     # print k, "->", v
             # print 'sass' , sassList
             # print 'coffee' , ' '.join(coffeeList)
