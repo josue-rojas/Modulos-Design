@@ -1,6 +1,5 @@
 # THINGS TO DO
-# ADD JOIN FOR SASS
-# this is easier than coffee since you can make a new .scss file and import whatever you are going to use
+# add options to run one thing only saving time on not doing other things
 # -----------------------------------------------------------------
 # this script is to join all coffee script files and sass files
 # this is to make less request while keeping the files organized
@@ -10,20 +9,12 @@
 # only watch -------------
 # _data for changes in sources
 # _sass for changes in sass files
-# resources/coffee for changes in coffee
+# _coffee for changes in coffee
 import os, yaml
-
-# if css convert to sass
-# https://www.npmjs.com/package/css-scss (maybe need to write another script using js to run this if i dont find another)
-
-# sassList = []
-# jsList = []
 
 
 # constants folder paths ...
 project_root = '/'.join(os.getcwd().split('/')[:-1])
-# print os.getcwd()
-# exit()
 data_folder = project_root + '/_data/'
 resource_folder = project_root + '/resources/'
 js_folder = resource_folder + '/js/'
@@ -37,9 +28,6 @@ coffeeFiles = ['coffee.coffee']
 
 # change to root to find stuff
 os.chdir(project_root)
-# print data_folder
-# os.chdir(coffee_folder)
-
 
 # TOO many for loop
 for file in os.listdir('_data'):
@@ -62,11 +50,5 @@ for file in os.listdir('_data'):
                     outPut = open(outputName, "w")
                     outPut.write(scssOut)
                     os.rename(project_root+'/'+outputName, css_folder+outputName)
-                    # print scssOut
-                # elif key == 'sass':
-                #     sassList = value
-            #     # print k, "->", v
-            # print 'sass' , sassList
-            # print 'coffee' , ' '.join(coffeeList)
-            # print
-print "Done With coffee join"
+
+print "Done With coffee,sass join"
