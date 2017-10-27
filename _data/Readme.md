@@ -3,7 +3,7 @@
 this folder contains configs for certain things of the page
 - To search a partial do ⌘f or open search in your browser and type in 'partial-name: [name of partial]'
 
-- you need to write all local css/scss and js files needed for the page, Order matters
+- you need to write all sass, css, coffee, and js files needed for the page, Order matters
 - need to write partials in order that they would appear
   - some partials take file locations or data
 
@@ -12,17 +12,20 @@ this folder contains configs for certain things of the page
 YML files should be name the page title (will change this in case title has space remind me if i don't)
 ```YAML
 ---
-  scss:
-  # all css to be imported by page. (all pages import bootstrap css in default layout)
+  sass:
+  # all sass to be imported by page. this is ued to make each page's scss imports
   # some partial should have it's own sass to import make sure to import it to have it's style
   # or import any that overrides
-    - "css/main.css" # necessary ALWAYS
-    - "css/navbar.css" # necessary if using default layout
-    - "css/footer.css" # necessary if using default layout
-    - "css/slideshow.css"
+    - "main.sass" # necessary ALWAYS
+    - "footer.sass" # necessary if using default layout
+    - "slideshow.sass"
+  css:
+  # all css to be imported by page
+  # all pages import bootstrap.css in default layout
+    - "/navbar.css" # necessary if using default layout
   coffee:
   # all coffee to be imported by page
-  # some partial may have it's own js to import, make sure to import for functionality (this is used when joining the coffee together)
+  # some partial may have it's own coffee to import, make sure to import for functionality (this is used when joining the coffee together)
     - "main.coffee" # necessary if using default layout
     - "footer.coffee" # necessary if using default layout
     - "slideshow.coffee"
@@ -43,7 +46,7 @@ YML files should be name the page title (will change this in case title has spac
           - "example1/test_4.jpg"
         speed: 2000 # speed in milliseconds to change slides
         auto: true # boolean of autostart slideshow
-        controls: true #boolean wether to have buttons or not (would only use if autoplay true)
-        id: 0 # partials place in this list, used to load it's resources
+        controls: true #boolean wether to have buttons or not (can only be false if autoplay is true)
+        id: 0 # partials place in this list, used to load/find it's resources
     -
 ```
