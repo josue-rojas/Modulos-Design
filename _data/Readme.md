@@ -17,12 +17,13 @@ YML files should be name the page title (will change this in case title has spac
   # some partial should have it's own sass to import make sure to import it to have it's style
   # or import any that overrides
     - "main.sass" # necessary ALWAYS
+    - "navbar.sass" # necessary if using default layout
     - "footer.sass" # necessary if using default layout
     - "slideshow.sass"
   css:
   # all css to be imported by page
   # all pages import bootstrap.css in default layout
-    - "/navbar.css" # necessary if using default layout
+    - "/style.css"
   coffee:
   # all coffee to be imported by page
   # some partial may have it's own coffee to import, make sure to import for functionality (this is used when joining the coffee together)
@@ -32,7 +33,13 @@ YML files should be name the page title (will change this in case title has spac
   js:
   # all javascript to be imported by page (all pages import jquery and bootstrap js in default layout)
     - "js/example.js"
- partials:
+  navbar:
+  # this is mandatory for default layout!!!
+    brand_name: "Showcase" # name of brand...
+    links: #links to be in the navbar
+      Title: "/links"
+      Example: "/example"
+  partials:
   # all partials to be rendered in page
   # IMPORTANT: every partial has an id which is just the position in the list
   # this is used to get any resources that it has from the YML
@@ -40,7 +47,7 @@ YML files should be name the page title (will change this in case title has spac
     -
       partial-name: slideshow
       # slideshow can have multiple
-      # slideshow: imports "slideshow.coffee" "css/slideshow.css"
+      # slideshow: imports "slideshow.coffee" "slideshow.sass"
         images: # list of images
           - "example1/test_1.jpg"
           - "example1/test_4.jpg"

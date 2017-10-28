@@ -4,12 +4,18 @@
     - "mixins.sass"
     - "footer.sass"
     - "slideshow.sass"
-  css:
-    - "css/navbar.css"
+    - "navbar.sass"
   coffee:
     - "main.coffee"
     - "footer.coffee"
     - "slideshow.coffee"
+  navbar:
+    brand_name: "Showcase"
+    links:
+      About: "/aboutus"
+      Help: "/help"
+      Services: "/services"
+      Contact: "/contact"
   partials:
     -
       partial-name: "slideshow"
