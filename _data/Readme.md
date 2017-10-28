@@ -17,12 +17,13 @@ YML files should be name the page title (will change this in case title has spac
   # some partial should have it's own sass to import make sure to import it to have it's style
   # or import any that overrides
     - "main.sass" # necessary ALWAYS
+    - "navbar.sass" # necessary if using default layout
     - "footer.sass" # necessary if using default layout
     - "slideshow.sass"
   css:
   # all css to be imported by page
   # all pages import bootstrap.css in default layout
-    - "/navbar.css" # necessary if using default layout
+    - "/style.css" # necessary if using default layout
   coffee:
   # all coffee to be imported by page
   # some partial may have it's own coffee to import, make sure to import for functionality (this is used when joining the coffee together)
