@@ -7,7 +7,7 @@
     <ul class="navbar-nav">
       {% for link in site.data[page.data_file].navbar.links %}
         <li class="nav-item">
-          <a class="nav-link" href="{% if {{root}}%}/{{root}}{% endif %}{{link[1]}}">{{link[0]}}</a>
+          <a class="nav-link" href="{% if {{root}}%}{{root}}{% endif %}{{link[1]}}">{{link[0]}}</a>
         </li>
       {% endfor %}
     </ul>
