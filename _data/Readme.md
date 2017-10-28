@@ -32,7 +32,13 @@ YML files should be name the page title (will change this in case title has spac
   js:
   # all javascript to be imported by page (all pages import jquery and bootstrap js in default layout)
     - "js/example.js"
- partials:
+  navbar:
+  # this is mandatory for default layout!!!
+    brand_name: "Showcase" # name of brand...
+    links: #links to be in the navbar
+      Title: "/links"
+      Example: "/example"
+  partials:
   # all partials to be rendered in page
   # IMPORTANT: every partial has an id which is just the position in the list
   # this is used to get any resources that it has from the YML

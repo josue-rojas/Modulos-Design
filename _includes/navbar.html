@@ -1,22 +1,15 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="/{{root}}">Showcase</a>
+  <a class="navbar-brand" href="/{{root}}">{{ site.data[page.data_file].navbar.brand_name }}</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="{% if {{root}}%}/{{root}}{% endif %}/aboutus">About us </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{% if {{root}}%}/{{root}}{% endif %}/help">Help</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{% if {{root}}%}/{{root}}{% endif %}/services">Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{% if {{root}}%}/{{root}}{% endif %}/contact">Contact</a>
-      </li>
+      {% for link in site.data[page.data_file].navbar.links %}
+        <li class="nav-item">
+          <a class="nav-link" href="{% if {{root}}%}/{{root}}{% endif %}{{link[1]}}">{{link[0]}}</a>
+        </li>
+      {% endfor %}
     </ul>
   </ul>
 </div>

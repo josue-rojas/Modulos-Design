@@ -7,3 +7,10 @@
   coffee:
     - "main.coffee"
     - "footer.coffee"
+  navbar:
+    brand_name: "Showcase"
+    links:
+      About: "/aboutus"
+      Help: "/help"
+      Services: "/services"
+      Contact: "/contact"
