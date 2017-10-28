@@ -23,7 +23,7 @@ YML files should be name the page title (will change this in case title has spac
   css:
   # all css to be imported by page
   # all pages import bootstrap.css in default layout
-    - "/style.css" # necessary if using default layout
+    - "/style.css"
   coffee:
   # all coffee to be imported by page
   # some partial may have it's own coffee to import, make sure to import for functionality (this is used when joining the coffee together)
@@ -47,7 +47,7 @@ YML files should be name the page title (will change this in case title has spac
     -
       partial-name: slideshow
       # slideshow can have multiple
-      # slideshow: imports "slideshow.coffee" "css/slideshow.css"
+      # slideshow: imports "slideshow.coffee" "slideshow.sass"
         images: # list of images
           - "example1/test_1.jpg"
           - "example1/test_4.jpg"
