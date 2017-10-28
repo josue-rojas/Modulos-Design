@@ -17,13 +17,14 @@ import os, yaml
 project_root = '/'.join(os.getcwd().split('/')[:-1])
 data_folder = project_root + '/_data/'
 resource_folder = project_root + '/resources/'
-js_folder = resource_folder + '/js/'
+js_folder = resource_folder + 'js/'
 coffee_folder = project_root + '/_coffee/'
 sass_folder = project_root + '/_sass/'
-css_folder = resource_folder + '/css/'
+css_folder = resource_folder + 'css/'
 
 # this file is needed for jekyll to convert coffee -> js
-coffeeFiles = ['coffee.coffee']
+# coffeeFiles = ['coffee.coffee']
+coffeeFiles = []
 
 
 # change to root to find stuff
@@ -42,7 +43,11 @@ for file in os.listdir('_data'):
                     coffee = ' '.join([coffee_folder + name for name in (coffeeFiles + value)])
                     outputName = file.split('.yml')[0] + '.coffee'
                     os.system('echo "' + coffee + '" | xargs cat > ' + outputName)
-                    os.rename(project_root+'/'+outputName, js_folder+outputName)
+                    os.system(' coffee -o ' + js_folder + ' -c ' + outputName)
+                    # print js_folder+file.split('.yml')[0]+'.js'
+                    os.system(' uglifyjs ' + js_folder+file.split('.yml')[0]+'.js' + ' -c -m -o ' +js_folder+file.split('.yml')[0]+'.js' )
+                    os.system('rm ' + outputName)
+                    # os.rename(project_root+'/'+outputName, js_folder+outputName)
                 # sass stuff
                 elif key == 'sass':
                     outputName = file.split('.yml')[0] + '.scss'
