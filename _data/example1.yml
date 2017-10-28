@@ -4,8 +4,7 @@
     - "mixins.sass"
     - "footer.sass"
     - "slideshow.sass"
-  css:
-    - "css/navbar.css"
+    - "navbar.sass"
   coffee:
     - "main.coffee"
     - "footer.coffee"
