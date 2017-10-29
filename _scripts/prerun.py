@@ -1,5 +1,5 @@
 # THINGS TO DO
-# add options to run one thing only saving time on not doing other things
+# make more efficient
 # -----------------------------------------------------------------
 # this script is to join all coffee script files and sass files
 # this is to make less request while keeping the files organized
@@ -10,7 +10,7 @@
 # _data for changes in sources
 # _sass for changes in sass files
 # _coffee for changes in coffee
-import os, yaml
+import os, yaml, sys
 
 
 # constants folder paths ...
@@ -26,6 +26,7 @@ css_folder = resource_folder + 'css/'
 # coffeeFiles = ['coffee.coffee']
 coffeeFiles = []
 
+todo = sys.argv[1]
 
 # change to root to find stuff
 os.chdir(project_root)
@@ -38,22 +39,21 @@ for file in os.listdir('_data'):
         for doc in yaml.load_all(stream):
             for key,value in doc.items():
                 # coffee stuff
-                if key == 'coffee':
+                if (todo=='all' or todo=='coffee') and key == 'coffee':
                     # join the coffee file needed by the project into 1 then move that in the resources folder
                     coffee = ' '.join([coffee_folder + name for name in (coffeeFiles + value)])
-                    outputName = file.split('.yml')[0] + '.coffee'
-                    os.system('echo "' + coffee + '" | xargs cat > ' + outputName)
-                    os.system(' coffee -o ' + js_folder + ' -c ' + outputName)
-                    # print js_folder+file.split('.yml')[0]+'.js'
-                    os.system(' uglifyjs ' + js_folder+file.split('.yml')[0]+'.js' + ' -c -m -o ' +js_folder+file.split('.yml')[0]+'.js' )
-                    os.system('rm ' + outputName)
+                    outputName = file.split('.yml')[0]
+                    os.system('echo "' + coffee + '" | xargs cat > ' + outputName + '.coffee')
+                    os.system(' coffee -o ' + js_folder + ' -c ' + outputName+ '.coffee')
+                    os.system(' uglifyjs ' + js_folder + outputName+'.js' + ' -c -m -o ' + js_folder + outputName+'.js' )
+                    os.system('rm ' + outputName+'.coffee')
                     # os.rename(project_root+'/'+outputName, js_folder+outputName)
                 # sass stuff
-                elif key == 'sass':
+                elif (todo=='all' or todo=='sass') and key == 'sass':
                     outputName = file.split('.yml')[0] + '.scss'
                     scssOut = '---\n---\n'+''.join(['@import "'+ sass + '";\n' for sass in value])
                     outPut = open(outputName, "w")
                     outPut.write(scssOut)
                     os.rename(project_root+'/'+outputName, css_folder+outputName)
 
-print "Done With coffee,sass join"
+print "Done With script"
