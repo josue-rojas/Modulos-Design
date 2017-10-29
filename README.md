@@ -10,6 +10,8 @@ A sample of dummy or real sites that will be used to show our skills at web deve
 #### INIT/NEED:
 - [Jekyll](https://jekyllrb.com/docs/installation/)
 - [Fswatch](https://github.com/emcrisostomo/fswatch)
+- [Coffee npm](https://www.npmjs.com/package/coffee-script)
+- [uglifyjs npm](https://www.npmjs.com/package/uglify-js)
 - python 2.7
 - (only tested in mac)
 
