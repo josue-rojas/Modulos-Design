@@ -4,9 +4,11 @@
     - "mixins.sass"
     - "footer.sass"
     - "navbar.sass"
+    - "slideshow.sass"
   coffee:
     - "main.coffee"
     - "footer.coffee"
+    - "slideshow.coffee"
   navbar:
     brand_name: "Showcase"
     links:
@@ -14,3 +16,15 @@
       Help: "/help"
       Services: "/services"
       Contact: "/contact"
+  partials:
+    -
+      partial-name: "slideshow"
+      images:
+        - "example1/test_1.jpg"
+        - "example1/test_2.jpg"
+        - "example1/test_3.jpg"
+        - "example1/test_4.jpg"
+      speed: 2000
+      auto: true
+      controls: false
+      id: 0

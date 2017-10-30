@@ -6,14 +6,10 @@ data_file: Showcase
 ---
 {% include root.html %}
 
-<div>
-<a href='{{root}}/readme'>Readme</a>
-<br>
-<a href='{{root}}/example1'>Slideshow Example</a>
-</div>
+
 <!-- partials insert -->
 {% for part in site.data[page.data_file].partials %}
   {% assign id=part.id %}
   {% assign p=part.partial-name| append: '.html'%}
     {% include {{p}} %}
-{% endfor %}
+{% endfor %} 
