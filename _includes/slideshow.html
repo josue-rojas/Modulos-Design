@@ -5,7 +5,6 @@
   {% if site.data[page.data_file].partials[id].fade == true %}
   {% assign fade='fade-trans' %}
   {% endif %}
-  <img src='{{root}}/resources/{{site.data[page.data_file].partials[id].images[0]}}' class='img-size'>
   <div class='image-wrapper'>
   {% for image in site.data[page.data_file].partials[id].images %}
     <img src='{{root}}/resources/{{image}}' data-pos='{{forloop.index0}}' class='slide
@@ -36,4 +35,5 @@
     </div> -->
   </div>
 {% endif %}
+<img src='{{root}}/resources/{{site.data[page.data_file].partials[id].images[0]}}' class='img-size'>
 </div>
