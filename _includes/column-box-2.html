@@ -1,0 +1,27 @@
+<div class='column-box-2'>
+  <div class='title'>
+    {{site.data[page.data_file].partials[id].title}}
+  </div>
+  <div class='columns-wrapper'>
+    <div class='column-1 column'>
+      <div class='image-wrapper'>
+        {% if {{site.data[page.data_file].partials[id].column-1.image}} %}
+        <img src='{{site.data[page.data_file].partials[id].column-1.image}}'>
+        {% endif %}
+      </div>
+      <div class='text'>
+        {{site.data[page.data_file].partials[id].column-1.text}}
+      </div>
+    </div>
+    <div class='column-2 column'>
+      <div class='image-wrapper'>
+        {% if {{site.data[page.data_file].partials[id].column-2.image}} %}
+        <img src='{{site.data[page.data_file].partials[id].column-1.image}}'>
+        {% endif %}
+      </div>
+      <div class='text'>
+        {{site.data[page.data_file].partials[id].column-2.text}}
+      </div>
+    </div>
+  </div>
+</div>
