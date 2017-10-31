@@ -5,6 +5,7 @@
     - "footer.sass"
     - "navbar.sass"
     - "slideshow.sass"
+    - "column-box-2.sass"
   coffee:
     - "main.coffee"
     - "footer.coffee"
@@ -29,3 +30,12 @@
       controls: false
       fade: true
       id: 0
+    -
+      partial-name: "column-box-2"
+      title: "About Us"
+      column-1:
+        text: "My name is Josue Rojas. I am software/web developer. I graduate from CUNY Lehman College with a Bacheler of Science in Computer Science and minor in Economics in December 2017. Some stuff I work with include HTML, Javascript, CSS, Python, Java, among other things. Some of my interest include data science, machine learning, stocks, learning stuff, and skateboarding in no particular order."
+        image: "https://avatars0.githubusercontent.com/u/10749061?v=4"
+      column-2:
+        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia con"
+      id: 1

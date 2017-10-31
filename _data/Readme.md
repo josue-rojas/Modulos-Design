@@ -20,6 +20,7 @@ YML files should be name the page title (will change this in case title has spac
     - "navbar.sass" # necessary if using default layout
     - "footer.sass" # necessary if using default layout
     - "slideshow.sass"
+    - "column-box-2.sass"
   css:
   # all css to be imported by page
   # all pages import bootstrap.css in default layout
@@ -45,7 +46,7 @@ YML files should be name the page title (will change this in case title has spac
   # this is used to get any resources that it has from the YML
   # below is th list of partials and it's resources(if you create a new one make sure to update this)
     -
-      partial-name: slideshow
+      partial-name: "slideshow"
       # slideshow can have multiple
       # slideshow: imports "slideshow.coffee" "slideshow.sass"
         images: # list of images
@@ -57,4 +58,12 @@ YML files should be name the page title (will change this in case title has spac
         fade: true # boolean to add fade transition effect or not
         id: 0 # partials place in this list, used to load/find it's resources
     -
+      partial-name: "column-box-2"
+      # imports "column-box-2.sass"
+      title: "Title" # title of to be display on box
+      column-1: # this contains data for column 1
+        text: "hello this is the text for column-1 in this box thingy"
+      column-2: # this contains data for column 2
+        text: "hello this is the text for column-2 in this box thingy"
+      id: 1
 ```
