@@ -1,13 +1,21 @@
 <div class='slideshow hasHover{% if site.data[page.data_file].partials[id].auto==false %} pause {% endif%}' data-speed={{site.data[page.data_file].partials[id].speed}}
  current=0 data-length={{ site.data[page.data_file].partials[id].images | size}}>
   <!-- images for slide -->
+  <!-- this image outside sets the height for the div box -->
+  {% if site.data[page.data_file].partials[id].fade == true %}
+  {% assign fade='fade-trans' %}
+  {% endif %}
+  <img src='{{root}}/resources/{{site.data[page.data_file].partials[id].images[0]}}' class='img-size'>
+  <div class='image-wrapper'>
   {% for image in site.data[page.data_file].partials[id].images %}
     <img src='{{root}}/resources/{{image}}' data-pos='{{forloop.index0}}' class='slide
     {% if forloop.index0==0%}
     active
     {% endif %}
+    {{fade}}
     '>
   {% endfor %}
+</div>
   {% if site.data[page.data_file].partials[id].controls == true or site.data[page.data_file].partials[id].auto==false%}
   <!-- arrow or buttons to switch slide -->
   <div class='button-wrapper'>

@@ -27,6 +27,7 @@
       speed: 2000
       auto: false
       controls: false
+      fade: false
       id: 0
     -
       partial-name: "slideshow"
@@ -38,6 +39,7 @@
       speed: 2000
       auto: true
       controls: false
+      fade: false
       id: 1
     -
       partial-name: "slideshow"
@@ -49,6 +51,7 @@
       speed: 3500
       auto: true
       controls: true
+      fade: true
       id: 2
     -
       partial-name: "slideshow"
@@ -60,4 +63,5 @@
       speed: 4000
       auto: false
       controls: true
+      fade: true
       id: 3

@@ -24,7 +24,8 @@
         - "example1/test_2.jpg"
         - "example1/test_3.jpg"
         - "example1/test_4.jpg"
-      speed: 2000
+      speed: 3000
       auto: true
       controls: false
+      fade: true
       id: 0

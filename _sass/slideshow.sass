@@ -1,8 +1,10 @@
 .slideshow
   display: flex
+  position: relative
   justify-content: center
   align-items: center
   .button-wrapper
+    z-index: 3
     opacity: 0
     width: 100%
     position: absolute
@@ -31,16 +33,25 @@
       bottom: 0
   .button-wrapper.toggle
     opacity: 1
-  img
-    // there should be a max height according to the screen size
-    // the images should fit it all so it can look best and the images won't move when a different size comes on
-    // max-height: 349px
-    width: 100vw
-    display: none
-  .active
-    display: inherit
-  width: 100%
-  background-color: black
+  .img-size
+    width: 100%
+    height: 100%
+    opacity: 0
+  .image-wrapper
+    position: absolute
+    width: 100%
+    height: 100%
+    img
+      position: absolute
+      width: 100vw
+      max-height: 100%
+      z-index: -1
+      opacity: 0
+    .fade-trans
+      transition: opacity 1s
+    .active
+      z-index: 1
+      opacity: 1
 .slideshow.hasHover:hover
   .button-wrapper
     opacity: 1
