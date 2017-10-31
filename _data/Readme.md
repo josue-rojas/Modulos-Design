@@ -53,7 +53,8 @@ YML files should be name the page title (will change this in case title has spac
           - "example1/test_4.jpg"
         speed: 2000 # speed in milliseconds to change slides
         auto: true # boolean of autostart slideshow
-        controls: true #boolean wether to have buttons or not (can only be false if autoplay is true)
+        controls: true # boolean wether to have buttons or not (can only be false if autoplay is true)
+        fade: true # boolean to add fade transition effect or not
         id: 0 # partials place in this list, used to load/find it's resources
     -
 ```
