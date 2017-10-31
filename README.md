@@ -12,6 +12,7 @@ A sample of dummy or real sites that will be used to show our skills at web deve
 - [Fswatch](https://github.com/emcrisostomo/fswatch)
 - [Coffee npm](https://www.npmjs.com/package/coffee-script)
 - [uglifyjs npm](https://www.npmjs.com/package/uglify-js)
+- [PYAML](https://github.com/yaml/pyyaml)
 - python 2.7
 - (only tested in mac)
 
@@ -19,12 +20,12 @@ A sample of dummy or real sites that will be used to show our skills at web deve
 To run with scripts
 (the scripts watch \_coffee, \_sass, and \_data to join files)
 - clone
-- MUST HAVE FSWATCH AND PYTHON 2.7
+- MUST HAVE ALL THINGS FROM INIT/NEED AND PYTHON 2.7
 - go to \_scripts and double click server.command
 - go to http://localhost:4000/
 
 To run just without scripts
-_Note: this will not make new coffee or scss files in resources folder_
+_Note: this will not make new coffee or scss files in resources folder (this is regular jekyll)_
 - clone this repo
 - open terminal
 - cd into this directory
@@ -39,6 +40,7 @@ _Note: this will not make new coffee or scss files in resources folder_
 > folder that contains all coffee file for the partials and stuff
 
 ### \_data
+> this folder contains all data on how each page is gonna render
 > [Readme](https://github.com/josuerojasrojas/Showcase/blob/master/_data/Readme.md)
 
 ### \_includes
@@ -52,6 +54,8 @@ _Note: this will not make new coffee or scss files in resources folder_
 
 ### \_scripts
 > folder contains scripts. right now it only has script to watch and render coffee and sass files from multiple ones.
+### pages
+> folder contains all the pages in their respective folders
 
 ### resources
 > folder should contain images , js , css or other resources for the page.
