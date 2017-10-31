@@ -20,6 +20,7 @@ YML files should be name the page title (will change this in case title has spac
     - "navbar.sass" # necessary if using default layout
     - "footer.sass" # necessary if using default layout
     - "slideshow.sass"
+    - "column-box-2.sass"
   css:
   # all css to be imported by page
   # all pages import bootstrap.css in default layout
