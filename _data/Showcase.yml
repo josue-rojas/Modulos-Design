@@ -6,6 +6,7 @@
     - "navbar.sass"
     - "slideshow.sass"
     - "column-box-2.sass"
+    - "map-box.sass"
   coffee:
     - "main.coffee"
     - "footer.coffee"
@@ -39,3 +40,12 @@
       column-2:
         text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia con"
       id: 1
+    -
+      partial-name: "map-box"
+      title: "Contact Us"
+      map-query: "lehman%20college"
+      contact-lines:
+        - "email.email@google.com"
+        - "123 maple street"
+        - "bronx ny, 10467"
+      id: 2

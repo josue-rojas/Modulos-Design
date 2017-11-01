@@ -21,6 +21,7 @@ YML files should be name the page title (will change this in case title has spac
     - "footer.sass" # necessary if using default layout
     - "slideshow.sass"
     - "column-box-2.sass"
+    - "map-box.sass"
   css:
   # all css to be imported by page
   # all pages import bootstrap.css in default layout
@@ -66,4 +67,15 @@ YML files should be name the page title (will change this in case title has spac
       column-2: # this contains data for column 2
         text: "hello this is the text for column-2 in this box thingy"
       id: 1
+    -
+      partial-name: "map-box"
+      # imports "map-box.sass"
+      title: "Title"
+      map-query: "bronx" #ummm... https://developers.google.com/maps/documentation/embed/start get the query from there.
+      contact-lines:
+        # contact information line by line
+        - "gmail@gmail.com"
+        - "123 maple street"
+        - "bronx ny, 10467"
+      id: 2
 ```
