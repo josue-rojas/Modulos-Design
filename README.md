@@ -1,11 +1,5 @@
----
-layout: default
-permalink: /readme
-title: readme
----
-
 # Showcase
-A sample of dummy or real sites that will be used to show our skills at web development
+A showcase of sites that will be used to show our skills at web development, using modular website building concepts.
 
 #### INIT/NEED:
 - [Jekyll](https://jekyllrb.com/docs/installation/)
