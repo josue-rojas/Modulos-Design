@@ -1,0 +1,14 @@
+<div class='map-box'>
+  <div class='title'>
+    {{site.data[page.data_file].partials[id].title}}
+  </div>
+  <div class='information-wrapper'>
+    <iframe  class='map' frameborder="0" src="https://www.google.com/maps/embed/v1/place?q={{site.data[page.data_file].partials[id].map-query}}&key=AIzaSyAz1ieCl8-RH99LDXsTs8slvnLVi_mQqrA" allowfullscreen></iframe>
+    <div class='information'>
+      {% for line in site.data[page.data_file].partials[id].contact-lines%}
+      {{line}}
+      <br>
+      {% endfor%}
+    </div>
+  </div>
+</div>
