@@ -5,8 +5,14 @@
   <div class='columns-wrapper'>
     <div class='column-1 column'>
       <div class='image-wrapper'>
-        {% if {{site.data[page.data_file].partials[id].column-1.image}} %}
-        <img src='{{site.data[page.data_file].partials[id].column-1.image | replace:'root',root }}'>
+        {% if {{site.data[page.data_file].partials[id].column-1.image.source}} %}
+          {% if {{site.data[page.data_file].partials[id].column-1.image.link}} %}
+          <a href='{{site.data[page.data_file].partials[id].column-1.image.link}}'>
+          {% endif %}
+        <img src='{{site.data[page.data_file].partials[id].column-1.image.source | replace:'root',root }}'>
+          {% if {{site.data[page.data_file].partials[id].column-1.image.link}} %}
+          </a>
+          {% endif %}
         {% endif %}
       </div>
       <div class='text'>
@@ -15,8 +21,14 @@
     </div>
     <div class='column-2 column'>
       <div class='image-wrapper'>
-        {% if {{site.data[page.data_file].partials[id].column-2.image}} %}
-        <img src='{{site.data[page.data_file].partials[id].column-2.image | replace:'root',root }}'>
+        {% if {{site.data[page.data_file].partials[id].column-2.image.source}} %}
+          {% if {{site.data[page.data_file].partials[id].column-2.image.link}} %}
+          <a href='{{site.data[page.data_file].partials[id].column-2.image.link}}'>
+            {% endif %}
+        <img src='{{site.data[page.data_file].partials[id].column-2.image.source | replace:'root',root }}'>
+          {% if {{site.data[page.data_file].partials[id].column-2.image.link}} %}
+          </a>
+          {% endif %}
         {% endif %}
       </div>
       <div class='text'>
