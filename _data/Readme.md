@@ -64,8 +64,13 @@ YML files should be name the page title (will change this in case title has spac
       title: "Title" # title of to be display on box
       column-1: # this contains data for column 1
         text: "hello this is the text for column-1 in this box thingy"
+        source: "root/resource/image/1.jpg" # source of image (root needed if local file), can also be url
+        link: "google.com" # link for the image when clicked
       column-2: # this contains data for column 2
         text: "hello this is the text for column-2 in this box thingy"
+        image:
+          source: "root/resource/image/1.jpg"
+          link: "google.com"
       id: 1
     -
       partial-name: "map-box"
