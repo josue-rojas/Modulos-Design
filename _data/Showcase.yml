@@ -35,7 +35,7 @@
       partial-name: "column-box-2"
       title: "About Us"
       column-1:
-        text: "My name is Josue Rojas. I am software/web developer. I graduate from CUNY Lehman College with a Bacheler of Science in Computer Science and minor in Economics in December 2017. Some stuff I work with include HTML, Javascript, CSS, Python, Java, among other things. Some of my interest include data science, machine learning, stocks, learning stuff, and skateboarding in no particular order."
+        text: "My name is Josue Rojas. I am software/web developer. I graduate from CUNY Lehman College with a Bacheler of Science in Computer Science and minor in Economics in December 2017. Some stuff I work with include HTML, Javascript, CoffeeScript, CSS, Sass, Nodejs, Python, Java, among other things. Some of my interest include data science, machine learning, stocks, learning stuff, and skateboarding in no particular order."
         image:
           source: "https://avatars0.githubusercontent.com/u/10749061?v=4"
           link: "https://github.com/josuerojasrojas"
