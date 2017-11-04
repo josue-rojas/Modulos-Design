@@ -22,6 +22,7 @@ YML files should be name the page title (will change this in case title has spac
     - "slideshow.sass"
     - "column-box-2.sass"
     - "map-box.sass"
+    - "column-gallery-3.sass"
   css:
   # all css to be imported by page
   # all pages import bootstrap.css in default layout
@@ -83,4 +84,12 @@ YML files should be name the page title (will change this in case title has spac
         - "123 maple street"
         - "bronx ny, 10467"
       id: 2
+    -
+      partial-name: "column-gallery-3"
+      # imports column-gallery-3.sass
+      images:
+        -
+          source: 'root/resource/image/1.jpg'
+          text-overlay: 'some text shown on hover'
+      id: 3
 ```

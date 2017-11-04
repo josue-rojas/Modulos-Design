@@ -1,0 +1,42 @@
+.column-gallery-3
+  margin: auto
+  .row
+    .image-column, .side-column, .inner-column
+      text-align: center
+      position: relative
+      width: 100%
+      min-height: 1px
+      margin: 10px 0
+    .image-column
+      .overlay-hover
+        color: white
+        opacity: 0
+        position: absolute
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: black
+        width: 100%
+        height: 100%
+        transition: opacity 500ms
+      .image
+        min-height: 100%
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: 50% 50%
+      img
+        opacity: 0
+        width: 100%
+    .image-column:hover
+      .overlay-hover
+        opacity: .8
+    +medium-devices
+      .side-column
+        flex: 0 0 6.5%
+        max-width: 6.5%
+      .inner-column
+        flex: 0 0 6%
+        max-width: 6%
+      .image-column
+        flex: 0 0 25%
+        max-width: 25%
