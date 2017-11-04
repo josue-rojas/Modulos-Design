@@ -5,17 +5,11 @@
     - "footer.sass"
     - "slideshow.sass"
     - "navbar.sass"
+    - "column-gallery-3.sass"
   coffee:
     - "main.coffee"
     - "footer.coffee"
     - "slideshow.coffee"
-  navbar:
-    brand_name: "Showcase"
-    links:
-      About: "/aboutus"
-      Help: "/help"
-      Services: "/services"
-      Contact: "/contact"
   partials:
     -
       partial-name: "slideshow"
@@ -30,38 +24,24 @@
       fade: false
       id: 0
     -
-      partial-name: "slideshow"
+      partial-name: "column-gallery-3"
       images:
-        - "example1/test_4.jpg"
-        - "example1/test_1.jpg"
-        - "example1/test_2.jpg"
-        - "example1/test_3.jpg"
-      speed: 2000
-      auto: true
-      controls: false
-      fade: false
+        -
+          source: 'root/resources/example1/test_1.jpg'
+          text-overlay: 'some text'
+        -
+          source: 'root/resources/example1/test_2.jpg'
+          text-overlay: 'some other text'
+        -
+          source: 'root/resources/example1/test_3.jpg'
+          text-overlay: 'might add links'
+        -
+          source: 'root/resources/example1/test_4.jpg'
+          text-overlay: 'some text'
+        -
+          source: 'root/resources/example1/test_3.jpg'
+          text-overlay: 'some other text'
+        -
+          source: 'root/resources/example1/test_2.jpg'
+          text-overlay: 'might add links'
       id: 1
-    -
-      partial-name: "slideshow"
-      images:
-        - "example1/test_3.jpg"
-        - "example1/test_4.jpg"
-        - "example1/test_1.jpg"
-        - "example1/test_2.jpg"
-      speed: 3500
-      auto: true
-      controls: true
-      fade: true
-      id: 2
-    -
-      partial-name: "slideshow"
-      images:
-        - "example1/test_2.jpg"
-        - "example1/test_3.jpg"
-        - "example1/test_4.jpg"
-        - "example1/test_1.jpg"
-      speed: 4000
-      auto: false
-      controls: true
-      fade: true
-      id: 3

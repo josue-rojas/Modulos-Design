@@ -1,0 +1,31 @@
+<div class='column-gallery-3'>
+  {% for imageInfo in site.data[page.data_file].partials[id].images %}
+    {% assign whichColumn = forloop.index0 | modulo:3 %}
+    {% if whichColumn == 0 %}
+      <!--  ROW -->
+      <div class=row>
+        <div class='side-column'></div>
+    {% elsif whichColumn == 1 %}
+        <div class='inner-column'>
+        </div>
+    {% elsif whichColumn == 2 %}
+        <div class='inner-column'>
+        </div>
+    {% endif %}
+        <div class='image-column'>
+          <div class='overlay-hover'>
+            {{imageInfo.text-overlay}}
+          </div>
+          <div class='image' style='background-image: url("{{imageInfo.source | replace:'root',root}}");'>
+            <!-- this image is to set the height (make it look better and dynamic sorta) -->
+          <img src='{{imageInfo.source | replace:'root',root}}'> </div>
+        </div>
+    {% if whichColumn == 2 %}
+        <div class='side-column'></div>
+    {% endif %}
+    {% if forloop.last or whichColumn == 2 %}
+      </div>
+    {% endif %}
+  {% endfor %}
+
+</div>
