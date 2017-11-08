@@ -3,13 +3,18 @@
 this folder contains configs for certain things of the page
 - To search a partial do ⌘f or open search in your browser and type in 'partial-name: [name of partial]'
 
+## YML Struture/ and Partial imports
+YML files is named after a variable in front matter of each page called 'data_file'
+
+- sass is imported from the \_sass folder
+- coffee is imported from the \_coffee folder
+- js is imported from the resources folder (no need to type resources)
+- css is imported from the resources folder
 - you need to write all sass, css, coffee, and js files needed for the page, Order matters
 - need to write partials in order that they would appear
   - some partials take file locations or data
 
 
-## YML Struture/ and Partial imports
-YML files should be name the page title (will change this in case title has space remind me if i don't)
 ```YAML
 ---
   sass:
