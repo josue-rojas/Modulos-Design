@@ -7,6 +7,7 @@
     - "slideshow.sass"
     - "column-box-2.sass"
     - "map-box.sass"
+    - "service.sass"
   coffee:
     - "main.coffee"
     - "footer.coffee"
@@ -32,6 +33,9 @@
       fade: true
       id: 0
     -
+      partial-name: "service"
+      id: 1
+    -
       partial-name: "column-box-2"
       title: "About Us"
       column-1:
@@ -43,7 +47,7 @@
         text: "My name is Getenet Laloto and I am a Software Engineer. I graduated from CUNY, Lehman college with bachelors of science in computer science in September 2017.  My primary focus and inspiration are SQL development, ETL, and Data warehouse. I am experienced in front and back-end development. Some of the technology I work with are  HTML, CSS, Javascript, Java, Python, SQL/MySQL/MongoDB."
         image:
           source: "root/resources/images/profile_image.JPG"
-      id: 1
+      id: 2
     -
       partial-name: "map-box"
       title: "Contact Us"
@@ -52,4 +56,4 @@
         - "email.email@google.com"
         - "123 maple street"
         - "bronx ny, 10467"
-      id: 2
+      id: 3
