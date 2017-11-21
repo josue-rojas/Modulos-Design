@@ -4,12 +4,17 @@ body
   align-items: center
   height: 100vh
   flex-direction: column
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
 
 $midLine: 30px
 $start: 500ms
+$font-color: black
 
 .front
   // height: 100vh
+  color: $font-color
   width: 100%
   display: flex
   flex-direction: column
@@ -21,10 +26,9 @@ $start: 500ms
     transition: 1s
     padding: 15px 20px
     max-width: 80%
-    background-color: white
     text-align: center
-    border-top: 1px solid black
-    border-bottom: 1px solid black
+    border-top: 1px solid $font-color
+    border-bottom: 1px solid $font-color
     .title, .text
       transition: $start
     .title
@@ -44,37 +48,37 @@ $start: 500ms
       position: absolute
       left: calc(50% - 1px)
       width: 1px
-      background: black
+      background: $font-color
       height: $midLine
       margin-top: -$midLine
       transition: height $start
     .nav-tab
       padding: 7px
-      border: 1px solid black
+      border: 1px solid $font-color
       border-top: 0px
       display: inline-block
       transition: 250ms, opacity $start
       a
-        color: black
+        color: $font-color
       a:hover
         text-decoration: none
       &:last-child
         border-radius: 0 0 5px 5px
       &:first-child
         border-radius: 5px 5px 0 0
-        border-top: 1px solid black
+        border-top: 1px solid $font-color
       &:hover
         background-color: rgba(0, 0, 0, 0.075)
     +small-devices
       flex-direction: row
       .nav-tab
-        border-top: 1px solid black
+        border-top: 1px solid $font-color
         border-left: 0px
         &:last-child
           border-radius: 0 5px 5px 0
         &:first-child
           border-radius: 5px 0 0 5px
-          border-left: 1px solid black
+          border-left: 1px solid $font-color
 
 .front.start
   width: 40%
