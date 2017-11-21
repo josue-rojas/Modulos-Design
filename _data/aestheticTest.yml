@@ -6,6 +6,7 @@
   coffee:
     - "main.coffee"
     - "aesthetic.coffee"
+  background-image: '/example1/test_4.jpg'
   intro:
     title: "Modulos Design"
     text: "hello and welcome to this page. this page is still a work in progess. just needed text to fill it... to test overflow and such. blah blah blah. "

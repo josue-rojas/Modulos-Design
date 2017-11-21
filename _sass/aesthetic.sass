@@ -3,8 +3,9 @@ body
   justify-content: center
   align-items: center
   height: 100vh
+  width: 100vw
+  background-position: 50% 50%
   flex-direction: column
-  background-position: center
   background-size: cover
   background-repeat: no-repeat
 
@@ -13,7 +14,9 @@ $start: 500ms
 $font-color: black
 
 .front
-  // height: 100vh
+  position: fixed
+  height: 100%
+  overflow: scroll
   color: $font-color
   width: 100%
   display: flex
@@ -23,20 +26,25 @@ $font-color: black
   transition: 1s
   transition: width $start
   .intro
+    margin-top: 10px
     transition: 1s
-    padding: 15px 20px
-    max-width: 80%
+    padding: 2.5rem 1rem
+    max-width: 90%
     text-align: center
     border-top: 1px solid $font-color
     border-bottom: 1px solid $font-color
     .title, .text
       transition: $start
     .title
-      font-size: 2rem
+      text-transform: uppercase
+      letter-spacing: 0.15rem
+      font-size: 1.75rem
       margin-bottom: 10px
     .text
+      font-weight: 100
       font-size: 1.2rem
     +medium-devices
+      margin-top: 0
       max-width: 50%
   .navigation
     display: flex
@@ -53,11 +61,14 @@ $font-color: black
       margin-top: -$midLine
       transition: height $start
     .nav-tab
+      text-align: center
       padding: 7px
       border: 1px solid $font-color
       border-top: 0px
       display: inline-block
       transition: 250ms, opacity $start
+      font-weight: 100
+      min-width: 86.609375px
       a
         color: $font-color
       a:hover
@@ -68,7 +79,8 @@ $font-color: black
         border-radius: 5px 5px 0 0
         border-top: 1px solid $font-color
       &:hover
-        background-color: rgba(0, 0, 0, 0.075)
+        cursor: pointer
+        background-color: rgba(0, 0, 0, 0.15)
     +small-devices
       flex-direction: row
       .nav-tab
