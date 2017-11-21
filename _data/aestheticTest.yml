@@ -1,0 +1,24 @@
+---
+  sass:
+    - "sizes.sass"
+    - "mixins.sass"
+    - "aesthetic.sass"
+  coffee:
+    - "main.coffee"
+  intro:
+    title: "Modulos Design"
+    text: "hello and welcome to this page. this page is still a work in progess. just needed text to fill it... to test overflow and such. blah blah blah. "
+  navbar:
+    tabs:
+      -
+        link: '#about'
+        title: 'About'
+      -
+        link: '#help'
+        title: 'Help'
+      -
+        link: '#services'
+        title: 'Services'
+      -
+        link: '#Contact'
+        title: 'Contact'
