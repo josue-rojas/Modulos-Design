@@ -10,17 +10,19 @@
 			<title>{{ page.title }}</title>
 		</head>
 		<body>
-      <div class='intro'>
-        <div class='title'>{{site.data[page.data_file].intro.title}}</div>
-        <div class='text'>{{site.data[page.data_file].intro.text}}</div>
-      </div>
-      <div class='navigation'>
-        {% for tab in site.data[page.data_file].navbar.tabs %}
-        <div class='nav-tab'>
-          <a href='{{tab.link}}'>{{tab.title}}</a>
-        </div>
-        {% endfor %}
-      </div>
-			{{ content }}
-		</body>
+			<div class='front'>
+      	<div class='intro'>
+        	<div class='title'>{{site.data[page.data_file].intro.title}}</div>
+        	<div class='text'>{{site.data[page.data_file].intro.text}}</div>
+      	</div>
+      	<div class='navigation'>
+        	{% for tab in site.data[page.data_file].navbar.tabs %}
+        	<div class='nav-tab'>
+          	<a href='{{tab.link}}'>{{tab.title}}</a>
+        	</div>
+      		{% endfor %}
+      	</div>
+			</div>
+				{{ content }}
+			</body>
 	</html>
