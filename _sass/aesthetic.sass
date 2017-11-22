@@ -144,10 +144,17 @@ $font-color: white
     background-color: rgba(0, 0, 0, 0.4)
     min-width: 100px
     min-height: 100px
+    .close
+      background: url('/resources/svg/x.svg')
+      min-width: 30px
+      min-height: 30px
+      background-size: 100%
+      background-position: center
+      margin-bottom: 10px
+      cursor: pointer
   +medium-devices
     margin-top: 0
     max-width: 50%
-
 .tab.active
   z-index: 3
   opacity: 1
