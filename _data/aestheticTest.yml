@@ -7,7 +7,7 @@
   coffee:
     - "main.coffee"
     - "aesthetic.coffee"
-  background-image: '/example1/test_1.jpg'
+  background-image: '/images/background.jpg'
   intro:
     title: "Modulos Design"
     text: "Hello! Welcome to Modulos Design. We are designers, makers, and maintainers of websites and applications. We strive to make great things for you or anyone who cares to contact us."
