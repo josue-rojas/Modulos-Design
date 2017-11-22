@@ -4,17 +4,43 @@ body
   align-items: center
   height: 100vh
   width: 100vw
-  background-position: 50% 50%
-  flex-direction: column
-  background-size: cover
-  background-repeat: no-repeat
+  background: black
+
+.background
+  height: 100vh
+  width: 100vw
+  .image
+    height: 105vh
+    width: 105vw
+    background-position: 50% 50%
+    flex-direction: column
+    background-size: cover
+    background-repeat: no-repeat
+    position: fixed
+    transition: 500ms
+    z-index: 1
+  .image.tab-active
+    height: 100vh
+    width: 100vw
+    filter: blur(10px)
+  .dark-layer
+    background-color: rgba(0, 0, 0, 0.6)
+    height: 100vh
+    width: 100vw
+    background-position: 50% 50%
+    flex-direction: column
+    background-size: cover
+    background-repeat: no-repeat
+    position: absolute
+    z-index: 2
 
 $midLine: 30px
 $start: 500ms
-$font-color: black
+$font-color: white
 
 .front
-  position: fixed
+  z-index: 3
+  position: absolute
   height: 100%
   overflow: scroll
   color: $font-color
@@ -80,7 +106,7 @@ $font-color: black
         border-top: 1px solid $font-color
       &:hover
         cursor: pointer
-        background-color: rgba(0, 0, 0, 0.15)
+        background-color: rgba(255, 255, 255, 0.15)
     +small-devices
       flex-direction: row
       .nav-tab

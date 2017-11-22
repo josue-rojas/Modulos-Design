@@ -6,10 +6,10 @@
   coffee:
     - "main.coffee"
     - "aesthetic.coffee"
-  background-image: '/example1/test_4.jpg'
+  background-image: '/example1/test_1.jpg'
   intro:
     title: "Modulos Design"
-    text: "hello and welcome to this page. this page is still a work in progess. just needed text to fill it... to test overflow and such. blah blah blah. "
+    text: "Hello! Welcome to Modulos Design. We are designers, makers, and maintainers of websites and applications. We strive to make great things for you or anyone who cares to contact us."
   navbar:
     tabs:
       -
