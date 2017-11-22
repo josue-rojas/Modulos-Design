@@ -21,7 +21,7 @@
       	</div>
       	<div class='navigation'>
         	{% for tab in site.data[page.data_file].navbar.tabs %}
-        	<div class='nav-tab'>
+        	<div class='nav-tab' onclick='activeTab("{{tab.link}}")'>
           	<a href='{{tab.link}}'>{{tab.title}}</a>
         	</div>
       		{% endfor %}
