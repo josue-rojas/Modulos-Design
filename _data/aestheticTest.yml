@@ -3,6 +3,7 @@
     - "sizes.sass"
     - "mixins.sass"
     - "aesthetic.sass"
+    - "aesthetic-map-box.sass"
   coffee:
     - "main.coffee"
     - "aesthetic.coffee"
@@ -24,3 +25,13 @@
       -
         link: '#Contact'
         title: 'Contact'
+  partials:
+    -
+      partial-name: "aesthetic-map-box"
+      link: 'Contact'
+      map-query: "lehman%20college"
+      contact-lines:
+        - "modulos.design.contact@gmail.com"
+        - '347-740-3325'
+        - "Bronx NY"
+      id: 0

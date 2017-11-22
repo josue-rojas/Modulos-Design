@@ -49,8 +49,7 @@ $font-color: white
   flex-direction: column
   justify-content: center
   align-items: center
-  transition: 1s
-  transition: width $start
+  transition: 1s, width $start, opacity 250ms
   .intro
     margin-top: 10px
     transition: 1s
@@ -117,10 +116,38 @@ $font-color: white
         &:first-child
           border-radius: 5px 0 0 5px
           border-left: 1px solid $font-color
-
+.front.tab-active
+  opacity: 0
 .front.start
   width: 40%
   .title, .text, .nav-tab
     font-size: 0
   .navigation::before
     height: 0
+
+.tab
+  max-width: 90%
+  z-index: -1
+  height: 100vh
+  overflow: scroll
+  color: $font-color
+  width: 100vw
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  position: absolute
+  opacity: 0
+  transition: 500ms
+  .box-default
+    padding: 20px
+    background-color: rgba(0, 0, 0, 0.4)
+    min-width: 100px
+    min-height: 100px
+  +medium-devices
+    margin-top: 0
+    max-width: 50%
+
+.tab.active
+  z-index: 3
+  opacity: 1
