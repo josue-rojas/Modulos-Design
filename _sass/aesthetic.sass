@@ -1,9 +1,13 @@
 body
+  +prefix-value(display, flex)
+  justify-content: center
+  align-items: center
   height: 100vh
   width: 100vw
   background: black
 
 .background
+  z-index: -1
   height: 100vh
   width: 100vw
   position: fixed
@@ -38,16 +42,16 @@ $font-color: white
 
 .front
   z-index: 3
-  position: absolute
+  // position: absolute
   height: 100%
   overflow: scroll
   color: $font-color
   width: 100%
-  display: flex
+  +prefix-value(display, flex)
   flex-direction: column
   justify-content: center
   align-items: center
-  transition: 1s, width $start, opacity 250ms
+  transition: 1s, width $start, opacity 500ms
   .intro
     margin-top: 10px
     transition: 1s
@@ -70,7 +74,7 @@ $font-color: white
       margin-top: 0
       max-width: 50%
   .navigation
-    display: flex
+    +prefix-value(display, flex)
     margin-top: $midLine
     flex-direction: column
     &::before
@@ -130,11 +134,12 @@ $font-color: white
   overflow: scroll
   color: $font-color
   width: 100vw
-  display: flex
+  +prefix-value(display, flex)
   flex-direction: column
   justify-content: center
   align-items: center
-  position: absolute
+  // display: none
+  // position: absolute
   opacity: 0
   transition: 500ms
   .box-default
