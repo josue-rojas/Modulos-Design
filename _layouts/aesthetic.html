@@ -9,7 +9,11 @@
       {% include resources.html %}
 			<title>{{ page.title }}</title>
 		</head>
-		<body style="background-image:url('{{root}}/resources/example1/test_4.jpg')">
+		<body>
+			<div class='background'>
+				<div class='dark-layer'></div>
+				<div class='image' style="background-image:url('{{root}}/resources/{{site.data[page.data_file].background-image}}')"></div>
+			</div>
 			<div class='front start'>
       	<div class='intro '>
         	<div class='title'>{{site.data[page.data_file].intro.title}}</div>
