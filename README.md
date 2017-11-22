@@ -30,33 +30,36 @@ _Note: this will not make new coffee or scss files in resources folder (this is 
 
 ### Folder structures
 
-### \_coffee
+- \_coffee
 > folder that contains all coffee file for the partials and stuff
+> [Readme](https://github.com/josuerojasrojas/Showcase/blob/master/_coffee/Readme.md)
 
-### \_data
+- \_data
 > this folder contains all data on how each page is gonna render
 > [Readme](https://github.com/josuerojasrojas/Showcase/blob/master/_data/Readme.md)
 
-### \_includes
+- \_includes
 > folder that includes partials (ie. footer, header, nav, etc.)
 
-### \_layouts
+- \_layouts
 > folder contains layouts for the pages
 
-### \_sass
+- \_sass
 > folder contains sass files for the pages each page should have it's own sass file and each partial should also have it's own. In the resource folder the there should be different scss that imports necessary stylesheets for their respective page.
+> [Readme](https://github.com/josuerojasrojas/Showcase/blob/master/_sass/Readme.md)
 
-### \_scripts
+
+- \_scripts
 > folder contains scripts. right now it only has script to watch and render coffee and sass files from multiple ones.
-### pages
+> [Readme](https://github.com/josuerojasrojas/Showcase/blob/master/_scripts/Readme.md)
+
+
+- pages
 > folder contains all the pages in their respective folders
 
-### resources
+- resources
 > folder should contain images , js , css or other resources for the page.
 
-## NOTE: for each page it should have it's own folder with it's name of the site.
-
-More rules to follow as more sites get created.
 
 ### Some stuff used
 - [To run scripts when change is made locally](https://github.com/emcrisostomo/fswatch)
