@@ -30,8 +30,9 @@ YML files is named after a variable in front matter of each page called 'data_fi
     - "column-gallery-3.sass"
   css:
   # all css to be imported by page
+  # if css is in local then need to specify root for root folder location and then the pathname
   # all pages import bootstrap.css in default layout
-    - "/style.css"
+    - "root/resources/css/style.css"
   coffee:
   # all coffee to be imported by page
   # some partial may have it's own coffee to import, make sure to import for functionality (this is used when joining the coffee together)
