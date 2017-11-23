@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="{{root}}/resources/css/{{ page.data_file }}.css">
 {% for  stylesheet in site.data[page.data_file].css %}
 <!-- then any extra css -->
-<link rel="stylesheet" href='{{root}}/resources/{{stylesheet}}'>
+<link rel="stylesheet" href='{{ stylesheet | replace:'root',root }}'>
 {% endfor %}
 <!-- JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
