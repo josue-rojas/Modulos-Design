@@ -8,7 +8,7 @@
     - "main.coffee"
     - "aesthetic.coffee"
   css:
-    - "https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed"
+    - "https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,200,400"
   background-image: '/images/background.jpg'
   intro:
     title: "Modulos Design"
