@@ -4,6 +4,7 @@
     - "mixins.sass"
     - "aesthetic.sass"
     - "aesthetic-map-box.sass"
+    - "aesthetic-simple-box.sass"
   coffee:
     - "main.coffee"
     - "aesthetic.coffee"
@@ -37,3 +38,24 @@
         - '347-740-3325'
         - "Bronx NY"
       id: 0
+    -
+      partial-name: "aesthetic-simple-box"
+      link: "help"
+      title: "Help"
+      image: "/images/help.jpg"
+      text: "We are here to help. If you need help, we will help. This is just fillin text that I need to replace later with something useful. I might forgot to write something, so this is a reminder to do so. I probably will fill it last minute"
+      id: 1
+    -
+      partial-name: "aesthetic-simple-box"
+      link: "about"
+      title: "About"
+      image: "/images/about.jpg"
+      text: "We are here to help. If you need help, we will help. This is just fillin text that I need to replace later with something useful. I might forgot to write something, so this is a reminder to do so. I probably will fill it last minute"
+      id: 2
+    -
+      partial-name: "aesthetic-simple-box"
+      link: "services"
+      title: "Services"
+      image: "/images/services.jpg"
+      text: "We are here to help. If you need help, we will help. This is just fillin text that I need to replace later with something useful. I might forgot to write something, so this is a reminder to do so. I probably will fill it last minute"
+      id: 3
