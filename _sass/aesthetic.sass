@@ -1,3 +1,8 @@
+$closeSize: 1.5rem
+$midLine: 30px
+$start: 500ms
+$font-color: white
+
 body
   +prefix-value(display, flex)
   justify-content: center
@@ -35,10 +40,6 @@ body
     background-repeat: no-repeat
     position: absolute
     z-index: 2
-
-$midLine: 30px
-$start: 500ms
-$font-color: white
 
 .front
   z-index: 3
@@ -132,6 +133,7 @@ $font-color: white
 
 .tab
   max-width: 100%
+  padding: 20px
   z-index: -1
   overflow: scroll
   color: $font-color
@@ -147,14 +149,15 @@ $font-color: white
     background-color: rgba(0, 0, 0, 0.4)
     min-width: 100px
     min-height: 100px
+    width: 100%
     .close
-      background: url('/Modulos-Design/resources/svg/x.svg')
-      min-width: 30px
-      min-height: 30px
+      background: url('/resources/svg/x.svg')
+      min-width: $closeSize
+      min-height: $closeSize
       background-size: 100%
       background-position: center
-      margin-bottom: 10px
       cursor: pointer
+      margin-left: auto
   +medium-devices
     margin-top: 0
     max-width: 50%
