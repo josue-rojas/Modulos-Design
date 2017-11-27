@@ -1,0 +1,13 @@
+{
+  "coffee":{
+    "main":["aestheticTest.yml"],
+    "aesthetic":["aestheticTest.yml"]
+  },
+  "sass":{
+    "aesthetic-map-box":["aestheticTest.yml"],
+    "aesthetic-simple-box":["aestheticTest.yml"],
+    "aesthetic":["aestheticTest.yml"],
+    "sizes":["aestheticTest.yml"],
+    "mixins":["aestheticTest.yml"]
+  }
+}
