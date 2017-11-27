@@ -13,5 +13,5 @@
       - "otherfiles.sass"
       - "filename.sass"
   ```
-4. wait for the server script make the custom scss file. 
+4. wait for the server script make the custom scss file.
 5. test and enjoy...

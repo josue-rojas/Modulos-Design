@@ -4,3 +4,4 @@ plugins:
   - jekyll-coffeescript
 exclude:
   - _scripts
+  - "*.coffee"

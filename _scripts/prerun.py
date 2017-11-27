@@ -1,7 +1,7 @@
 # THINGS TO DO
 # make more efficient
 # need cleaner to check if constants still exist
-# this has to be used after data changes
+    # there should be a cleaner at the beginning that cleanst constans from missing coffee, sass, and data files
 # -----------------------------------------------------------------
 # this script is to join all coffee script files and sass files
 # this is to make less request while keeping the files organized, the only downside is that it might take up more space
@@ -38,7 +38,7 @@ with open(constantsJSON) as json_File:
     dependents = json.load(json_File)
 def updateConst(newData):
     with open(constantsJSON, 'w') as json_File:
-        json.dump(newData, json_File)
+        json.dump(newData, json_File, indent=4,sort_keys=True)
 
 
 # this makes coffee -> js and or sass -> scss
@@ -69,7 +69,6 @@ def renderFiles(change, rCoffee=True, rSass=True):
                 outPut = open(css_folder + outputName, "w")
                 outPut.write(scssOut)
                 sassList = value
-                # os.rename(project_root+'/'+outputName, css_folder+outputName)#this should be one step in open
     return (coffeeList, sassList)
 
 
@@ -85,18 +84,34 @@ folder = change.split('/')[-2]
 # - make js files
 # - make scss file
 if folder == '_data':
-    renderFiles(change)
-    # coffeeList, sassList = renderFiles(change)
+    # renderFiles(change)
+    coffeeList, sassList = renderFiles(change)
+    print 'cleaning constants.json'
     # cleanup should not effect jekyll render cause its not watching this
-    # update the constants
-    # start with coffee clean
-    # print dependents['coffee']
-    # for cup in dependents['coffee'].keys():
-    #     if cup in coffeeList:
-    #         print 'cup is ' + cup
+    coffeeList = [x.split('/')[-1].split('.')[0] for x in coffeeList]
+    sassList = [x.split('/')[-1].split('.')[0] for x in sassList]
+    fileName+='.yml'
+    for cup in dependents['coffee'].keys():
+        # if the coffee file is in the data file then make sure it has the data file in the json (...ill make it more clear when im not sleepy)
+        if cup in coffeeList:
+            # if doesnt exit on constants added.
+            if not (fileName in dependents['coffee'][cup]):
+                dependents['coffee'][cup].append(fileName)
+        # elif its in the list (its not suppose to) make sure it isnt in the list of the json
+        # NEED TESTING
+        elif (fileName in dependents['coffee'][cup]):
+            dependents['coffee'][cup].remove(fileName)
+    # now sass cleaning
+    # NEEDS TESTING
+    for sas in dependents['sass'].keys():
+        if sas in sassList:
+            if not (fileName in dependents['sass'][sas]):
+                dependents['sass'][sas].append(fileName)
+        elif (fileName in dependents['sass'][sas]):
+            dependents['sass'][sas].remove(fileName)
+    # finally dump everything to the files
+    updateConst(dependents)
 
-    # print coffeeList
-    # print sassList
 
 # elif the change is from coffee folder
 # - read constants.json
@@ -128,3 +143,4 @@ elif folder == '_sass':
 
 
 print "\nDone With " + change
+exit()
