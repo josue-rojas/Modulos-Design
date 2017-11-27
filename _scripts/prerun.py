@@ -27,7 +27,7 @@ scripts_folder = project_root + '/_scripts/'
 constantsJSON = project_root + '/_scripts/constants.json'
 
 # local node modules
-cofee = project_root + '/node_modules/.bin/coffee'
+coffee_node = project_root + '/node_modules/.bin/coffee'
 uglifyjs = project_root + '/node_modules/.bin/uglifyjs '
 
 # change to root to find stuff
@@ -57,7 +57,7 @@ def renderFiles(change, rCoffee=True, rSass=True):
                 coffeeOut = dataFile + '.coffee'
                 jsOut = dataFile + '.js'
                 os.system('echo "' + coffee + '" | xargs cat > ' + coffeeOut)
-                os.system(cofee + ' -o ' + js_folder + ' -c ' + coffeeOut)
+                os.system(coffee_node + ' -o ' + js_folder + ' -c ' + coffeeOut)
                 os.system(uglifyjs + js_folder + jsOut + ' -c  --keep-fnames -m -o ' + js_folder + jsOut )
                 os.system('rm ' + coffeeOut)
                 coffeeList = value
@@ -79,7 +79,7 @@ fileName = change.split('/')[-1].split('.')[0]
 folder = change.split('/')[-2]
 
 # if the change was from a data file
-# - update cacheCofee
+# - update cacheCoffee
 # - update cacheSass
 # - make js files
 # - make scss file
