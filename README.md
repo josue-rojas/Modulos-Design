@@ -1,32 +1,37 @@
-# Showcase
-A showcase of sites that will be used to show our skills at web development, using modular website building concepts.
+# Modulos-Design
+
+Sets of moodulos that enables us to make sites faster by reusing code.
 
 #### INIT/NEED:
 - [Jekyll](https://jekyllrb.com/docs/installation/)
 - [Fswatch](https://github.com/emcrisostomo/fswatch)
-- [Coffee npm](https://www.npmjs.com/package/coffee-script)
-- [uglifyjs npm](https://www.npmjs.com/package/uglify-js)
 - [PYAML](https://github.com/yaml/pyyaml)
 - python 2.7
+- Node Packages (install using 'npm install')
+  - [Coffee npm](https://www.npmjs.com/package/coffee-script)
+  - [uglifyjs npm](https://www.npmjs.com/package/uglify-js)
 - (only tested in mac)
 
 #### Start
-To run with scripts
-(the scripts watch \_coffee, \_sass, and \_data to join files)
-- clone
-- MUST HAVE ALL THINGS FROM INIT/NEED AND PYTHON 2.7
-- go to \_scripts and double click server.command
-- go to http://localhost:4000/
 
-To run just without scripts
-_Note: this will not make new coffee or scss files in resources folder (this is regular jekyll)_
-- clone this repo
-- open terminal
-- cd into this directory
-- and type 'jekyll server'
-- finally in the browser go to http://localhost:4000/
+```bash
+cd some/folder/projects
+# clone if you have not done so
+git clone git@github.com:josuerojasrojas/Modulos-Design.git
 
+# To run with scripts
+# (the scripts watch \_coffee, \_sass, and \_data to join files)
+cd Modulos-Design
+# install node packages
+npm install
+npm start
 
+# To run just without scripts
+# _Note: this will not make new coffee or scss files in resources folder (this is regular jekyll)_
+# jekyll server #instead of npm start
+
+open http://localhost:4000
+```
 
 ### Folder structures
 
@@ -64,3 +69,4 @@ _Note: this will not make new coffee or scss files in resources folder (this is 
 ### Some stuff used
 - [To run scripts when change is made locally](https://github.com/emcrisostomo/fswatch)
 - [Script to join coffee](https://stackoverflow.com/questions/4575260/join-multiple-coffeescript-files-into-one-file-multiple-subdirectories)
+- [Run local node packages in terminal](https://stackoverflow.com/questions/9679932/how-to-use-package-installed-locally-in-node-modules)
