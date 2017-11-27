@@ -5,3 +5,5 @@ _site/
 .sass-cache/
 resources/js/*.coffee
 /*.coffee
+node_modules
+node_modules/*

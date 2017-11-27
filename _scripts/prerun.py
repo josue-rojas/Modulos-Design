@@ -21,6 +21,10 @@ js_folder = resource_folder + 'js/'
 coffee_folder = project_root + '/_coffee/'
 sass_folder = project_root + '/_sass/'
 css_folder = resource_folder + 'css/'
+node_modules = project_root + '/node_modules/.bin/'
+cofee = node_modules + 'coffee'
+uglifyjs = node_modules + 'uglifyjs '
+
 
 # this file is needed for jekyll to convert coffee -> js
 # coffeeFiles = ['coffee.coffee']
@@ -46,8 +50,8 @@ for file in os.listdir('_data'):
                     coffeeOut = file.split('.yml')[0]+ '.coffee'
                     jsOut = file.split('.yml')[0] + '.js'
                     os.system('echo "' + coffee + '" | xargs cat > ' + coffeeOut)
-                    os.system(' coffee -o ' + js_folder + ' -c ' + coffeeOut)
-                    os.system(' uglifyjs ' + js_folder + jsOut + ' -c  --keep-fnames -m -o ' + js_folder + jsOut )
+                    os.system(cofee + ' -o ' + js_folder + ' -c ' + coffeeOut)
+                    os.system(uglifyjs + js_folder + jsOut + ' -c  --keep-fnames -m -o ' + js_folder + jsOut )
                     os.system('rm ' + coffeeOut)
                     # os.rename(project_root+'/'+outputName, js_folder+outputName)
                 # sass stuff
