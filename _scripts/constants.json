@@ -3,26 +3,19 @@
         "aesthetic": [
             "aestheticTest.yml"
         ], 
-        "aesthetica": [], 
         "footer": [
-            "aboutus.yml", 
-            "contact.yml", 
-            "help.yml", 
-            "Showcase.yml"
+            "example1.yml"
         ], 
         "main": [
             "aestheticTest.yml", 
-            "aboutus.yml", 
-            "contact.yml", 
-            "help.yml", 
             "scrollexample.yml", 
-            "Showcase.yml"
+            "example1.yml"
         ], 
         "scrollSite": [
             "scrollexample.yml"
         ], 
         "slideshow": [
-            "Showcase.yml"
+            "example1.yml"
         ]
     }, 
     "sass": {
@@ -35,32 +28,22 @@
         "aesthetic-simple-box": [
             "aestheticTest.yml"
         ], 
-        "column-box-2": [
-            "Showcase.yml"
+        "column-box-2": [], 
+        "column-gallery-3": [
+            "example1.yml"
         ], 
-        "column-gallery-3": [], 
         "footer": [
-            "aboutus.yml", 
-            "contact.yml", 
-            "help.yml", 
-            "Showcase.yml"
+            "example1.yml"
         ], 
-        "map-box": [
-            "Showcase.yml"
-        ], 
+        "map-box": [], 
         "mixins": [
             "aestheticTest.yml", 
-            "aboutus.yml", 
-            "contact.yml", 
-            "help.yml", 
             "scrollexample.yml", 
-            "Showcase.yml"
+            "example1.yml"
         ], 
         "navbar": [
-            "aboutus.yml", 
-            "contact.yml", 
-            "help.yml", 
-            "Showcase.yml"
+            "Showcase.yml", 
+            "example1.yml"
         ], 
         "scrollSite": [
             "scrollexample.yml"
@@ -70,14 +53,11 @@
         ], 
         "sizes": [
             "aestheticTest.yml", 
-            "aboutus.yml", 
-            "contact.yml", 
-            "help.yml", 
             "scrollexample.yml", 
-            "Showcase.yml"
+            "example1.yml"
         ], 
         "slideshow": [
-            "Showcase.yml"
+            "example1.yml"
         ]
     }
 }
