@@ -1,0 +1,82 @@
+{
+    "coffee": {
+        "aesthetic": [
+            "aestheticTest.yml"
+        ], 
+        "footer": [
+            "aboutus.yml", 
+            "contact.yml", 
+            "help.yml", 
+            "Showcase.yml"
+        ], 
+        "main": [
+            "aestheticTest.yml", 
+            "aboutus.yml", 
+            "contact.yml", 
+            "help.yml", 
+            "scrollexample.yml", 
+            "Showcase.yml"
+        ], 
+        "scrollSite": [
+            "scrollexample.yml"
+        ], 
+        "slideshow": [
+            "Showcase.yml"
+        ]
+    }, 
+    "sass": {
+        "aesthetic": [
+            "aestheticTest.yml"
+        ], 
+        "aesthetic-map-box": [
+            "aestheticTest.yml"
+        ], 
+        "aesthetic-simple-box": [
+            "aestheticTest.yml"
+        ], 
+        "column-box-2": [
+            "Showcase.yml"
+        ], 
+        "column-gallery-3": [], 
+        "footer": [
+            "aboutus.yml", 
+            "contact.yml", 
+            "help.yml", 
+            "Showcase.yml"
+        ], 
+        "map-box": [
+            "Showcase.yml"
+        ], 
+        "mixins": [
+            "aestheticTest.yml", 
+            "aboutus.yml", 
+            "contact.yml", 
+            "help.yml", 
+            "scrollexample.yml", 
+            "Showcase.yml"
+        ], 
+        "navbar": [
+            "aboutus.yml", 
+            "contact.yml", 
+            "help.yml", 
+            "Showcase.yml"
+        ], 
+        "scrollSite": [
+            "scrollexample.yml"
+        ], 
+        "service": [
+            "Showcase.yml"
+        ], 
+        "sizes": [
+            "aestheticTest.yml", 
+            "aboutus.yml", 
+            "contact.yml", 
+            "help.yml", 
+            "scrollexample.yml", 
+            "Showcase.yml"
+        ], 
+        "slideshow": [
+            "Showcase.yml"
+        ]
+    }
+}
