@@ -9,5 +9,11 @@
     "aesthetic":["aestheticTest.yml"],
     "sizes":["aestheticTest.yml"],
     "mixins":["aestheticTest.yml"]
+  },
+  "yml":{
+    "aestheticTest":{
+      "sass":[],
+      "coffee":[]
+    }
   }
 }
