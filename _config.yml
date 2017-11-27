@@ -5,3 +5,4 @@ plugins:
 exclude:
   - _scripts
   - "*.coffee"
+  - "node_modules"
