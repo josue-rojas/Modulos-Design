@@ -132,10 +132,10 @@ body
     height: 0
 
 .tab
+  max-height: 100%
   max-width: 100%
   padding: 20px
   z-index: -1
-  overflow: scroll
   color: $font-color
   width: 100vw
   +prefix-value(display, flex)
@@ -145,6 +145,7 @@ body
   opacity: 0
   transition: 500ms
   .box-default
+    overflow: scroll
     padding: 20px
     background-color: rgba(0, 0, 0, 0.4)
     min-width: 100px
