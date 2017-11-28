@@ -13,9 +13,7 @@
             "example1.yml", 
             "fullgallery.yml"
         ], 
-        "scrollSite": [
-            "scrollexample.yml"
-        ], 
+        "scrollSite": [], 
         "slideshow": [
             "example1.yml"
         ]
@@ -51,9 +49,7 @@
             "Showcase.yml", 
             "example1.yml"
         ], 
-        "scrollSite": [
-            "scrollexample.yml"
-        ], 
+        "scrollSite": [], 
         "service": [
             "Showcase.yml"
         ], 
