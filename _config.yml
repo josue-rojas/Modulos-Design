@@ -6,3 +6,5 @@ exclude:
   - _scripts
   - "*.coffee"
   - "node_modules"
+  - "package.json"
+  - "*.md"
