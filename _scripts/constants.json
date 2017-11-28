@@ -10,7 +10,8 @@
         "main": [
             "aestheticTest.yml", 
             "scrollexample.yml", 
-            "example1.yml"
+            "example1.yml", 
+            "fullgallery.yml"
         ], 
         "scrollSite": [
             "scrollexample.yml"
@@ -36,11 +37,15 @@
         "footer": [
             "example1.yml"
         ], 
+        "full-gallery": [
+            "fullgallery.yml"
+        ], 
         "map-box": [], 
         "mixins": [
             "aestheticTest.yml", 
             "scrollexample.yml", 
-            "example1.yml"
+            "example1.yml", 
+            "fullgallery.yml"
         ], 
         "navbar": [
             "Showcase.yml", 
@@ -55,7 +60,8 @@
         "sizes": [
             "aestheticTest.yml", 
             "scrollexample.yml", 
-            "example1.yml"
+            "example1.yml", 
+            "fullgallery.yml"
         ], 
         "slideshow": [
             "example1.yml"

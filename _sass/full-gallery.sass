@@ -1,0 +1,18 @@
+.full-gallery
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  .image-square
+    color: white
+    display: flex
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    min-height: 18em
+    min-width: 100%
+    .text
+      margin: auto auto 10px 10px
+    +small-devices
+      min-width: 50%
+    +large-devices
+      min-width: 33.3333%
