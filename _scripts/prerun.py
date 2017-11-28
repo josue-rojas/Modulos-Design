@@ -15,6 +15,20 @@
 # _coffee for changes in coffee
 import os, yaml, sys, json
 
+# https://stackoverflow.com/questions/287871/print-in-terminal-with-colors
+class bcolors:
+    AQUA = '\033[96m'
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+print bcolors.WARNING +'\nBeginning Script....' + bcolors.OKGREEN
+
+
 # constants folder paths ...
 project_root = '/'.join(os.getcwd().split('/')[:-1])
 data_folder = project_root + '/_data/'
@@ -51,10 +65,9 @@ def renderFiles(change, rCoffee=True, rSass=True):
         for key,value in doc.items():
             # coffee stuff
             if rCoffee and key == 'coffee':
-                print '\nmaking coffe'
                 coffee = ' '.join([coffee_folder + name for name in value])
-                print coffee
                 coffeeOut = dataFile + '.coffee'
+                print 'making coffee: ' + coffeeOut
                 jsOut = dataFile + '.js'
                 os.system('echo "' + coffee + '" | xargs cat > ' + coffeeOut)
                 os.system(coffee_node + ' -o ' + js_folder + ' -c ' + coffeeOut)
@@ -63,8 +76,8 @@ def renderFiles(change, rCoffee=True, rSass=True):
                 coffeeList = value
             # sass stuff
             elif rSass and key == 'sass':
-                print '\nmaking scss'
                 outputName = dataFile + '.scss'
+                print 'making scss: ' + outputName
                 scssOut = '---\n---\n'+''.join(['@import "'+ sass + '";\n' for sass in value])
                 outPut = open(css_folder + outputName, "w")
                 outPut.write(scssOut)
@@ -77,6 +90,11 @@ change = sys.argv[1]
 fileName = change.split('/')[-1].split('.')[0]
 # get the type of change (_data, _coffee, or _sass)
 folder = change.split('/')[-2]
+
+def endStuff(extraMessage=''):
+    print bcolors.WARNING + extraMessage + "Done With " + change
+    print bcolors.ENDC
+    exit()
 
 # if the change was from a data file
 # - update cacheCoffee
@@ -118,12 +136,11 @@ if folder == '_data':
 # - get all who depend on the files (should be a list)
 #-  create js file for them (update files)
 elif folder == '_coffee':
-    coffeeDep = dependents['coffee'].get(fileName, [])
-    if len(coffeeDep) == 0:
+    coffeeDep = dependents['coffee'].get(fileName, 1)
+    if coffeeDep == 1:
         dependents['coffee'][fileName] = []
         updateConst(dependents)
-        print 'adding coffee to constants.json'
-        exit()
+        endStuff('adding coffee to constants.json\n')
     for dep in coffeeDep:
         renderFiles(data_folder + dep, rSass=False)
 
@@ -136,11 +153,8 @@ elif folder == '_sass':
     if len(sassDep) == 0: # no sass thing......
         dependents['sass'][fileName] = []
         updateConst(dependents)
-        print 'adding sass to constants.json'
-        exit()
+        endStuff('adding sass to constants.json\n')
     for dep in sassDep:
         renderFiles(data_folder+ dep, rCoffee=False)
 
-
-print "\nDone With " + change
-exit()
+endStuff()
