@@ -1,0 +1,30 @@
+---
+  sass:
+    - "sizes.sass"
+    - "mixins.sass"
+    - "full-gallery.sass"
+  coffee:
+    - "main.coffee"
+  partials:
+    -
+      partial-name: 'full-gallery'
+      images:
+        -
+          src: "/resources/images/about.jpg"
+          text: "Hello"
+        -
+          src: "/resources/images/background.jpg"
+          text: "hi"
+        -
+          src: "/resources/images/help.jpg"
+          text: "blah blah"
+        -
+          src: "/resources/images/services.jpg"
+          text: "Hello"
+        -
+          src: "/resources/images/about.jpg"
+          text: "hi"
+        -
+          src: "/resources/images/background.jpg"
+          text: "blah blah"
+      id: 0

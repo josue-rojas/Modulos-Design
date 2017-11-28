@@ -1,0 +1,8 @@
+<!-- inspired by https://html5up.net/multiverse -->
+<div class='full-gallery'>
+  {% for square in site.data[page.data_file].partials[id].images %}
+  <div class='image-square' style="background-image:url('{{square.src}}')">
+    <div class='text'>{{square.text}}</div>
+  </div>
+  {% endfor%}
+</div>
