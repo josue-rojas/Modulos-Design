@@ -9,7 +9,7 @@
           {% if {{site.data[page.data_file].partials[id].column-1.image.link}} %}
           <a href='{{site.data[page.data_file].partials[id].column-1.image.link}}'>
           {% endif %}
-        <img src='{{site.data[page.data_file].partials[id].column-1.image.source | replace:'root',root }}'>
+        <img src='{{site.data[page.data_file].partials[id].column-1.image.source}}'>
           {% if {{site.data[page.data_file].partials[id].column-1.image.link}} %}
           </a>
           {% endif %}
@@ -25,7 +25,7 @@
           {% if {{site.data[page.data_file].partials[id].column-2.image.link}} %}
           <a href='{{site.data[page.data_file].partials[id].column-2.image.link}}'>
             {% endif %}
-        <img src='{{site.data[page.data_file].partials[id].column-2.image.source | replace:'root',root }}'>
+        <img src='{{site.data[page.data_file].partials[id].column-2.image.source}}'>
           {% if {{site.data[page.data_file].partials[id].column-2.image.link}} %}
           </a>
           {% endif %}

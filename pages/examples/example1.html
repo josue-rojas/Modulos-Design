@@ -4,11 +4,6 @@ title: Example 1
 permalink: /example1
 data_file: example1
 ---
-{% comment %}
-the root var is instatiated again and gets pass through the partials using {(percent) (percent)}
-{% endcomment %}
-{% include root.html %}
-
 <!-- partials insert -->
 {% for part in site.data[page.data_file].partials %}
   {% assign id=part.id %}
