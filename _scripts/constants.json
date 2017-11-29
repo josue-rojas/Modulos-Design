@@ -7,13 +7,16 @@
         "footer": [
             "example1.yml"
         ], 
+        "full-gallery": [], 
         "main": [
             "aestheticTest.yml", 
             "scrollexample.yml", 
             "example1.yml", 
             "fullgallery.yml"
         ], 
-        "scrollSite": [], 
+        "scrollSite": [
+            "scrollexample.yml"
+        ], 
         "slideshow": [
             "example1.yml"
         ]
@@ -49,7 +52,9 @@
             "Showcase.yml", 
             "example1.yml"
         ], 
-        "scrollSite": [], 
+        "scrollSite": [
+            "scrollexample.yml"
+        ], 
         "service": [
             "Showcase.yml"
         ], 
