@@ -77,6 +77,7 @@ body
       max-width: 50%
   .navigation
     +prefix-value(display, flex)
+    position: relative
     margin-top: $midLine
     flex-direction: column
     &::before
@@ -98,7 +99,7 @@ body
       display: inline-block
       transition: 250ms, opacity $start
       font-weight: 200
-      min-width: 89.703125px
+      min-width: 90px
       letter-spacing: .1rem
       a
         color: $font-color
