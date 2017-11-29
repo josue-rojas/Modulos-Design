@@ -1,69 +1,69 @@
 {
     "coffee": {
         "aesthetic": [
-            "aestheticTest.yml"
-        ], 
-        "coffee": [], 
+            "modulos-design.yml"
+        ],
+        "coffee": [],
         "footer": [
             "example1.yml"
-        ], 
-        "full-gallery": [], 
+        ],
+        "full-gallery": [],
         "main": [
-            "aestheticTest.yml", 
-            "scrollexample.yml", 
-            "example1.yml", 
-            "fullgallery.yml"
-        ], 
+            "scrollexample.yml",
+            "example1.yml",
+            "fullgallery.yml",
+            "modulos-design.yml"
+        ],
         "scrollSite": [
             "scrollexample.yml"
-        ], 
+        ],
         "slideshow": [
             "example1.yml"
         ]
-    }, 
+    },
     "sass": {
         "aesthetic": [
-            "aestheticTest.yml"
-        ], 
+            "modulos-design.yml"
+        ],
         "aesthetic-map-box": [
-            "aestheticTest.yml"
-        ], 
+            "modulos-design.yml"
+        ],
         "aesthetic-simple-box": [
-            "aestheticTest.yml"
-        ], 
-        "column-box-2": [], 
+            "modulos-design.yml"
+        ],
+        "column-box-2": [],
         "column-gallery-3": [
             "example1.yml"
-        ], 
+        ],
         "footer": [
             "example1.yml"
-        ], 
+        ],
         "full-gallery": [
             "fullgallery.yml"
-        ], 
-        "map-box": [], 
+        ],
+        "map-box": [],
         "mixins": [
-            "aestheticTest.yml", 
-            "scrollexample.yml", 
-            "example1.yml", 
-            "fullgallery.yml"
-        ], 
+            "scrollexample.yml",
+            "example1.yml",
+            "fullgallery.yml",
+            "modulos-design.yml"
+        ],
         "navbar": [
-            "Showcase.yml", 
+            "Showcase.yml",
             "example1.yml"
-        ], 
+        ],
         "scrollSite": [
             "scrollexample.yml"
-        ], 
+        ],
         "service": [
             "Showcase.yml"
-        ], 
+        ],
         "sizes": [
-            "aestheticTest.yml", 
             "scrollexample.yml", 
-            "example1.yml", 
-            "fullgallery.yml"
-        ], 
+            "example1.yml",
+            "fullgallery.yml",
+            "modulos-design.yml"
+        ],
         "slideshow": [
             "example1.yml"
         ]

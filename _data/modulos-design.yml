@@ -1,0 +1,63 @@
+---
+  sass:
+    - "sizes.sass"
+    - "mixins.sass"
+    - "aesthetic.sass"
+    - "aesthetic-map-box.sass"
+    - "aesthetic-simple-box.sass"
+  coffee:
+    - "main.coffee"
+    - "aesthetic.coffee"
+  css:
+    - "https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,200,400"
+  background-image: '/images/background.jpg'
+  intro:
+    title: "Modulos Design"
+    text: "Hello! Welcome to Modulos Design. We are designers, makers, and maintainers of websites and applications. We strive to make the best and great things no matter the project."
+  navbar:
+    tabs:
+      -
+        link: '#about'
+        title: 'About'
+      -
+        link: '#team'
+        title: 'Team'
+      -
+        link: '#services'
+        title: 'Services'
+      -
+        link: '#contact'
+        title: 'Contact'
+  partials:
+    -
+      partial-name: "aesthetic-map-box"
+      link: 'contact'
+      title: "Contact"
+      map-query: "lehman%20college"
+      contact-lines:
+        - "<strong>Contact us for question and pricing</strong>"
+        - "Modulos.Design.Contact@gmail.com"
+        - "Email either Josue Rojas or Getenet Laloto"
+        - 'Phone: 347-740-3325'
+      id: 0
+    -
+      partial-name: "aesthetic-simple-box"
+      link: "team"
+      title: "Team"
+      image: "/resources/images/help.jpg"
+      text: "<strong>Josue Rojas</strong><br>I am software/web developer. I graduate from CUNY Lehman College with a Bacheler of Science in Computer Science and minor in Economics in December 2017. Some stuff I work with include HTML, Javascript, CoffeeScript, CSS, Sass, Nodejs, Python, Java, among other things. Some of my interest include data science, machine learning, stocks, learning stuff, and skateboarding in no particular order.<br><strong>Getenet Laloto</strong><br>I am a Software Engineer. I graduated from CUNY, Lehman college with bachelors of science in computer science in September 2017.  My primary focus and inspiration are SQL development, ETL, and Data warehouse. I am experienced in front and back-end development. Some of the technology I work with are  HTML, CSS, Javascript, Java, Python, SQL/MySQL/MongoDB."
+      id: 1
+    -
+      partial-name: "aesthetic-simple-box"
+      link: "about"
+      title: "About"
+      image: "/resources/images/about.jpg"
+      text: "We at <strong>Modulos-Design</strong> aim to provide our customers with the best services they can get no matter the size of the project. A website is not just for big companies but for anyone who wants to display an image online. It is important for us and others to have the best presence online that shows who we are. Our websites are always changing to meet our customers needs and wants. This is why our services makes great effort to design, make, and maintain the best sites."
+      id: 2
+    -
+      partial-name: "aesthetic-simple-box"
+      link: "services"
+      title: "Services"
+      image: "/resources/images/services.jpg"
+      text: "We are <strong>designers, makers, and maintainers</strong> of websites. We aim to provide the best quality web-development at a low cost. We do this by beign passionate about our work. Our passion is what drives us to make the best for our customers.<br> Our services include <strong>designing, making, and maintaining websites</strong>. We work with our customers to make the best design that fits their requesites. We make the website to fill the every requesite but we know that often the requesites change, that is why we are maintainers that make the process of changing things very quickly ans easily."
+      id: 3
