@@ -30,9 +30,8 @@ YML files is named after a variable in front matter of each page called 'data_fi
     - "column-gallery-3.sass"
   css:
   # all css to be imported by page
-  # if css is in local then need to specify root for root folder location and then the pathname
   # all pages import bootstrap.css in default layout
-    - "root/resources/css/style.css"
+    - "/resources/css/style.css"
   coffee:
   # all coffee to be imported by page
   # some partial may have it's own coffee to import, make sure to import for functionality (this is used when joining the coffee together)
@@ -71,12 +70,12 @@ YML files is named after a variable in front matter of each page called 'data_fi
       title: "Title" # title of to be display on box
       column-1: # this contains data for column 1
         text: "hello this is the text for column-1 in this box thingy"
-        source: "root/resource/image/1.jpg" # source of image (root needed if local file), can also be url
+        source: "/resource/image/1.jpg" # source of image, can also be url
         link: "google.com" # link for the image when clicked
       column-2: # this contains data for column 2
         text: "hello this is the text for column-2 in this box thingy"
         image:
-          source: "root/resource/image/1.jpg"
+          source: "/resource/image/1.jpg"
           link: "google.com"
       id: 1
     -
@@ -95,7 +94,7 @@ YML files is named after a variable in front matter of each page called 'data_fi
       # imports column-gallery-3.sass
       images:
         -
-          source: 'root/resource/image/1.jpg'
+          source: '/resource/image/1.jpg'
           text-overlay: 'some text shown on hover'
       id: 3
 ```

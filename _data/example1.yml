@@ -27,21 +27,21 @@
       partial-name: "column-gallery-3"
       images:
         -
-          source: 'root/resources/example1/test_1.jpg'
+          source: '/resources/example1/test_1.jpg'
           text-overlay: 'some text'
         -
-          source: 'root/resources/example1/test_2.jpg'
+          source: '/resources/example1/test_2.jpg'
           text-overlay: 'some other text'
         -
-          source: 'root/resources/example1/test_3.jpg'
+          source: '/resources/example1/test_3.jpg'
           text-overlay: 'might add links'
         -
-          source: 'root/resources/example1/test_4.jpg'
+          source: '/resources/example1/test_4.jpg'
           text-overlay: 'some text'
         -
-          source: 'root/resources/example1/test_3.jpg'
+          source: '/resources/example1/test_3.jpg'
           text-overlay: 'some other text'
         -
-          source: 'root/resources/example1/test_2.jpg'
+          source: '/resources/example1/test_2.jpg'
           text-overlay: 'might add links'
       id: 1
