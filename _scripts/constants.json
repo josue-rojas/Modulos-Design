@@ -7,6 +7,9 @@
         "footer": [
             "example1.yml"
         ], 
+        "full-gallery": [
+            "fullgallery.yml"
+        ], 
         "main": [
             "aestheticTest.yml", 
             "scrollexample.yml", 

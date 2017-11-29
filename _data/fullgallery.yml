@@ -5,6 +5,7 @@
     - "full-gallery.sass"
   coffee:
     - "main.coffee"
+    - "full-gallery.coffee"
   partials:
     -
       partial-name: 'full-gallery'

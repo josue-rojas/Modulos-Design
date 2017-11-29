@@ -1,8 +1,19 @@
 <!-- inspired by https://html5up.net/multiverse -->
+<div class='extr'>
+<div class='selected-image'>
+  <img src='/resources/images/background.jpg'>
+</div>
+</div>
 <div class='full-gallery'>
+  <!-- <div class='selected-wrapper'>
+    <div class='selected-image'>
+      <img src='/resources/images/background.jpg'>
+    </div>
+  </div> -->
   {% for square in site.data[page.data_file].partials[id].images %}
-  <div class='image-square' style="background-image:url('{{square.src}}')">
+  <div class='image-square' style="background-image:url('{{square.src}}')" onclick='selectImage("{{square.src}}")'>
     <div class='text'>{{square.text}}</div>
+    <div class='dark-layer'></div>
   </div>
   {% endfor%}
 </div>
