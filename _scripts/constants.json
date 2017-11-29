@@ -2,68 +2,68 @@
     "coffee": {
         "aesthetic": [
             "modulos-design.yml"
-        ],
-        "coffee": [],
+        ], 
+        "coffee": [], 
         "footer": [
             "example1.yml"
-        ],
-        "full-gallery": [],
+        ], 
+        "full-gallery": [], 
         "main": [
-            "scrollexample.yml",
-            "example1.yml",
-            "fullgallery.yml",
+            "scrollexample.yml", 
+            "example1.yml", 
+            "fullgallery.yml", 
             "modulos-design.yml"
-        ],
+        ], 
         "scrollSite": [
             "scrollexample.yml"
-        ],
+        ], 
         "slideshow": [
             "example1.yml"
         ]
-    },
+    }, 
     "sass": {
         "aesthetic": [
             "modulos-design.yml"
-        ],
+        ], 
         "aesthetic-map-box": [
             "modulos-design.yml"
-        ],
+        ], 
         "aesthetic-simple-box": [
             "modulos-design.yml"
-        ],
-        "column-box-2": [],
+        ], 
+        "column-box-2": [], 
         "column-gallery-3": [
             "example1.yml"
-        ],
+        ], 
         "footer": [
             "example1.yml"
-        ],
+        ], 
         "full-gallery": [
             "fullgallery.yml"
-        ],
-        "map-box": [],
+        ], 
+        "map-box": [], 
         "mixins": [
-            "scrollexample.yml",
-            "example1.yml",
-            "fullgallery.yml",
+            "scrollexample.yml", 
+            "example1.yml", 
+            "fullgallery.yml", 
             "modulos-design.yml"
-        ],
+        ], 
         "navbar": [
-            "Showcase.yml",
+            "Showcase.yml", 
             "example1.yml"
-        ],
+        ], 
         "scrollSite": [
             "scrollexample.yml"
-        ],
+        ], 
         "service": [
             "Showcase.yml"
-        ],
+        ], 
         "sizes": [
             "scrollexample.yml", 
-            "example1.yml",
-            "fullgallery.yml",
+            "example1.yml", 
+            "fullgallery.yml", 
             "modulos-design.yml"
-        ],
+        ], 
         "slideshow": [
             "example1.yml"
         ]

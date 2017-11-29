@@ -1,0 +1,6 @@
+<!-- partials insert -->
+{% for part in site.data[page.data_file].partials %}
+  {% assign id=part.id %}
+  {% assign p=part.partial-name| append: '.html'%}
+    {% include {{p}} %}
+{% endfor %}
