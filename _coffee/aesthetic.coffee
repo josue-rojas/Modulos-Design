@@ -1,5 +1,5 @@
 document.addEventListener "DOMContentLoaded", ->
-  currentTab = ''
+  currentTab = window.location.hash
 
   $('.tab').css('display', 'none')
 
@@ -14,7 +14,9 @@ document.addEventListener "DOMContentLoaded", ->
         $(tab).addClass('active')
       setTimeout(extra, 0)
     setTimeout(fade, 400)
+    
   window.closeTab = ->
+    window.location.hash = ''
     $('.background .image').removeClass('tab-active')
     $(currentTab).removeClass('active')
     fade = ->
@@ -25,8 +27,12 @@ document.addEventListener "DOMContentLoaded", ->
       setTimeout(extra, 0)
     setTimeout(fade, 400)
 
+  # set right tab for first time loading
+  $currentTab = $(currentTab)
+  if $currentTab.length
+    activeTab(currentTab)
+
 $(window).on 'load', ->
   start = ->
-    console.log('hello')
     $('.start').removeClass('start')
   setTimeout(start, 0)
