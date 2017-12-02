@@ -4,6 +4,7 @@ plugins:
   - jekyll-coffeescript
 exclude:
   - _scripts
+  - _coffee
   - "*.coffee"
   - "node_modules"
   - "package.json"

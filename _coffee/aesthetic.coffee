@@ -14,7 +14,7 @@ document.addEventListener "DOMContentLoaded", ->
         $(tab).addClass('active')
       setTimeout(extra, 0)
     setTimeout(fade, 400)
-    
+
   window.closeTab = ->
     window.location.hash = ''
     $('.background .image').removeClass('tab-active')
