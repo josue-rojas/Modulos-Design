@@ -20,7 +20,6 @@ data="$root/_data/"
 scripts="$root/_scripts"
 sass="$root/_sass"
 pythonScript="$scripts/prerun.py"
-
 echo -e  $COL_RED"Watching:"$COL_RESET
 echo -e  $COL_YELLOW$coffee$COL_RESET
 echo -e  $COL_YELLOW$sass$COL_RESET
@@ -28,4 +27,4 @@ echo -e  $COL_YELLOW$data$COL_RESET
 echo
 
 
-cd $root; jekyll server & cd $scripts; fswatch -0 $coffee $sass $data |  xargs -0 -n1 python $pythonScript
+cd $root; mkdir '_junk'; jekyll server & cd $scripts; fswatch -0 $coffee $sass $data |  xargs -0 -n1 python $pythonScript

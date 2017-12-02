@@ -6,8 +6,9 @@ exclude:
   - _scripts
   - _coffee
   - _junk
-  - "node_modules"
-  - "package.json"
-  - "README.md"
-  # - "*.coffee"
+  - node_modules
+  - package.json
   - CNAME
+  - README.md
+  - _data/Readme.md
+  - _sass/Readme.md

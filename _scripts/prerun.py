@@ -29,6 +29,7 @@ class bcolors:
 print bcolors.WARNING +'\nBeginning Script....' + bcolors.OKGREEN
 
 def endStuff(extraMessage=''):
+    os.system('rm ' + '_junk/*')
     print  extraMessage + bcolors.WARNING + "Done With " + change
     print bcolors.ENDC
     exit()
@@ -96,7 +97,6 @@ def renderFiles(change, rCoffee=True, rSass=True):
                 outPut = open(css_folder + outputName, "w")
                 outPut.write(scssOut)
                 sassList = value
-    os.system('rm ' + '_junk/*')
     return (coffeeList, sassList)
 
 def convertFromConstants(folderType, rCoffee, rSass):
