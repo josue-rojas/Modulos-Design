@@ -5,7 +5,10 @@ plugins:
 exclude:
   - _scripts
   - _coffee
-  - "*.coffee"
-  - "node_modules"
-  - "package.json"
-  - "*.md"
+  - _junk
+  - node_modules
+  - package.json
+  - CNAME
+  - README.md
+  - _data/Readme.md
+  - _sass/Readme.md
