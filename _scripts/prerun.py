@@ -84,7 +84,6 @@ def renderFiles(change, rCoffee=True, rSass=True):
                 sassList = value
     return (coffeeList, sassList)
 
-
 # get change file and its name
 change = sys.argv[1]
 fileName = change.split('/')[-1].split('.')[0]
@@ -92,9 +91,27 @@ fileName = change.split('/')[-1].split('.')[0]
 folder = change.split('/')[-2]
 
 def endStuff(extraMessage=''):
-    print bcolors.WARNING + extraMessage + "Done With " + change
+    print  extraMessage + bcolors.WARNING + "Done With " + change
     print bcolors.ENDC
     exit()
+
+def convertFromConstants(folderType, rCoffee, rSass):
+    fileDependents = dependents[folderType].get(fileName, 1)
+    if fileDependents == 1:
+        dependents[folderType][fileName] = []
+        updateConst(dependents)
+        endStuff('adding ' + fileName + ' to constants.json\n')
+    updateDependents = False
+    updatedList = fileDependents[:]
+    for dep in fileDependents:
+        if os.path.isfile(data_folder+ dep):
+            renderFiles(data_folder + dep, rCoffee, rSass)
+        else:
+            updateDependents = True
+            updatedList.remove(dep)
+    if updateDependents:
+        dependents[folderType][fileName] = updatedList
+        updateConst(dependents)
 
 # if the change was from a data file
 # - update cacheCoffee
@@ -130,31 +147,16 @@ if folder == '_data':
     # finally dump everything to the files
     updateConst(dependents)
 
-
 # elif the change is from coffee folder
 # - read constants.json
 # - get all who depend on the files (should be a list)
 #-  create js file for them (update files)
 elif folder == '_coffee':
-    coffeeDep = dependents['coffee'].get(fileName, 1)
-    if coffeeDep == 1:
-        dependents['coffee'][fileName] = []
-        updateConst(dependents)
-        endStuff('adding coffee to constants.json\n')
-    for dep in coffeeDep:
-        renderFiles(data_folder + dep, rSass=False)
+    convertFromConstants('coffee', True, False)
 
 # finally elif the change is from sass folder
-# - read constants.json
-# - get all who depend on the files
-# - create a scss file for them (update files)
+# same procedure as coffee folder
 elif folder == '_sass':
-    sassDep = dependents['sass'].get(fileName, [])
-    if len(sassDep) == 0: # no sass thing......
-        dependents['sass'][fileName] = []
-        updateConst(dependents)
-        endStuff('adding sass to constants.json\n')
-    for dep in sassDep:
-        renderFiles(data_folder+ dep, rCoffee=False)
+    convertFromConstants('sass', False, True)
 
 endStuff()
