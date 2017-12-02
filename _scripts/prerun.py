@@ -80,13 +80,13 @@ def renderFiles(change, rCoffee=True, rSass=True):
             # coffee stuff
             if rCoffee and key == 'coffee':
                 coffee = ' '.join([coffee_folder + name for name in value])
-                coffeeOut = dataFile + '.coffee'
+                coffeeOut = '_junk/' + dataFile + '.coffee'
                 print 'making coffee: ' + coffeeOut
                 jsOut = dataFile + '.js'
                 os.system('echo "' + coffee + '" | xargs cat > ' + coffeeOut)
-                os.system(coffee_node + ' -o ' + js_folder + ' -c ' + coffeeOut)
-                os.system(uglifyjs + js_folder + jsOut + ' -c  --keep-fnames -m -o ' + js_folder + jsOut )
-                os.system('rm ' + coffeeOut)
+                os.system(coffee_node + ' -o ' + '_junk/' + ' -c ' + coffeeOut)
+                os.system(uglifyjs + '_junk/' + jsOut + ' -c  --keep-fnames -m -o ' + js_folder + jsOut )
+                # os.system('rm ' + coffeeOut)
                 coffeeList = value
             # sass stuff
             elif rSass and key == 'sass':
@@ -96,6 +96,7 @@ def renderFiles(change, rCoffee=True, rSass=True):
                 outPut = open(css_folder + outputName, "w")
                 outPut.write(scssOut)
                 sassList = value
+    os.system('rm ' + '_junk/*')
     return (coffeeList, sassList)
 
 def convertFromConstants(folderType, rCoffee, rSass):

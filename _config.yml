@@ -5,7 +5,9 @@ plugins:
 exclude:
   - _scripts
   - _coffee
-  - "*.coffee"
+  - _junk
   - "node_modules"
   - "package.json"
-  - "*.md"
+  - "README.md"
+  # - "*.coffee"
+  - CNAME
