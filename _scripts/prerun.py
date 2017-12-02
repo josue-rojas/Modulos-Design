@@ -28,6 +28,20 @@ class bcolors:
     UNDERLINE = '\033[4m'
 print bcolors.WARNING +'\nBeginning Script....' + bcolors.OKGREEN
 
+def endStuff(extraMessage=''):
+    print  extraMessage + bcolors.WARNING + "Done With " + change
+    print bcolors.ENDC
+    exit()
+
+# get change file and its name
+change = sys.argv[1]
+fileName = change.split('/')[-1]
+# check paths here so it wont waste doing other stuff if not right extension
+if not fileName.split('.')[1] in ['yml', 'sass', 'coffee']:
+    endStuff('File not supported in convert\n')
+fileName = fileName.split('.')[0]
+# get the type of change (_data, _coffee, or _sass)
+folder = change.split('/')[-2]
 
 # constants folder paths ...
 project_root = '/'.join(os.getcwd().split('/')[:-1])
@@ -83,17 +97,6 @@ def renderFiles(change, rCoffee=True, rSass=True):
                 outPut.write(scssOut)
                 sassList = value
     return (coffeeList, sassList)
-
-# get change file and its name
-change = sys.argv[1]
-fileName = change.split('/')[-1].split('.')[0]
-# get the type of change (_data, _coffee, or _sass)
-folder = change.split('/')[-2]
-
-def endStuff(extraMessage=''):
-    print  extraMessage + bcolors.WARNING + "Done With " + change
-    print bcolors.ENDC
-    exit()
 
 def convertFromConstants(folderType, rCoffee, rSass):
     fileDependents = dependents[folderType].get(fileName, 1)
