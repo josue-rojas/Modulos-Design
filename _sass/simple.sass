@@ -5,6 +5,7 @@ body
   +prefix-value(display, flex)
   justify-content: center
   align-items: center
+  flex-direction: column
   height: 100vh
   width: 100vw
   background: black
@@ -49,6 +50,7 @@ svg g
   justify-content: center
   align-items: center
   text-align: center
+  margin: auto
   .card-image
     min-width: 125px
     min-height: 125px
@@ -117,6 +119,18 @@ svg g
       border: 1px solid $button-hover-color
       a
         color: $button-hover-color
+
+footer
+  font-weight: 100
+  margin-bottom: 3px
+  font-size: .85rem
+  a
+    color: $font-color
+    transition: 400ms
+    &:hover
+      text-decoration: none
+      color: $button-hover-color
+
 
 .dropdown
   border: 1px solid $font-color

@@ -24,3 +24,5 @@
       -
         name: 'Resume'
         link: 'https://goo.gl/yFs4U6'
+  footer:
+    text: 'Developed by © <a href="http://modulos-design.com">Modulos-Design</a>'
