@@ -1,0 +1,141 @@
+$font-color: #989DA1
+$button-hover-color: rgb(5, 251, 255)
+
+body
+  +prefix-value(display, flex)
+  justify-content: center
+  align-items: center
+  height: 100vh
+  width: 100vw
+  background: black
+  font-family: 'Barlow Semi Condensed', sans-serif
+  color: $font-color
+
+svg g
+  fill: $font-color
+
+.background
+  z-index: -1
+  height: 100vh
+  width: 100vw
+  position: fixed
+  .image
+    height: 105vh
+    width: 105vw
+    background-position: 50% 50%
+    flex-direction: column
+    background-size: cover
+    background-repeat: no-repeat
+    transition: 500ms
+    z-index: 1
+  .dark-layer
+    background-color: rgba(0, 0, 0, 0.6)
+    height: 100vh
+    width: 100vw
+    background-position: 50% 50%
+    flex-direction: column
+    background-size: cover
+    background-repeat: no-repeat
+    position: absolute
+    z-index: 2
+
+.card
+  background-color: rgba(31, 31, 31, 0.6)
+  min-width: 100px
+  min-height: 100px
+  padding: 40px 30px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+  .card-image
+    min-width: 125px
+    min-height: 125px
+    max-width: 125px
+    max-height: 125px
+    overflow: hidden
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    border-radius: 100%
+  .name
+    font-size: 1.8rem
+    font-weight: 400
+    letter-spacing: .2rem
+    text-transform: uppercase
+    margin: 10px auto 0px
+  .description
+    margin-bottom: 5px
+    font-size: 1.2rem
+    letter-spacing: .1rem
+    font-weight: 200
+  .social-links
+    display: flex
+    transition: 400ms
+    justify-content: space-between
+    .button
+      width: 25px
+      margin: 3px
+    svg
+      border-radius: 5px
+      g
+        transition: 800ms
+    .button:hover
+      color: $button-hover-color
+      svg g
+        fill: $button-hover-color
+  .link-list-wrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .links-list
+      max-height: 0
+      overflow: hidden
+      display: flex
+      transition: max-height 400ms ease-out
+      &.active
+        max-height: 1000px
+        transition: max-height 400ms ease-in
+      .pair-links
+        display: flex
+  .simple-button
+    transition: 400ms
+    border-radius: 5px
+    border: 1px solid $font-color
+    padding: 5px 7px
+    min-width: 90px
+    margin: 3px 5px
+    a
+      transition: 800ms
+      color: $font-color
+    a:hover
+      text-decoration: none
+    &:hover
+      cursor: pointer
+      border: 1px solid $button-hover-color
+      a
+        color: $button-hover-color
+
+.dropdown
+  border: 1px solid $font-color
+  border-radius: 100%
+  width: 32px
+  height: 32px
+  padding: 2px
+  transition: 400ms
+  svg
+    width: 100%
+    height: 32px
+    margin-top: -1px
+    g
+      transition: 800ms
+  &:hover
+    cursor: pointer
+    border: 1px solid $button-hover-color
+    svg g
+      fill: $button-hover-color
+  &.active
+    margin-top: 10px
+    transform: rotate(180deg)
