@@ -46,10 +46,6 @@ svg g
   min-height: 100px
   padding: 40px 30px
   display: table
-  // display: flex
-  // flex-direction: column
-  // justify-content: center
-  // align-items: center
   text-align: center
   margin: auto
   .card-image
@@ -76,18 +72,24 @@ svg g
     font-weight: 200
   .social-links
     margin: auto
+    margin-bottom: 5px
     display: table
-    transition: 400ms
     justify-content: space-between
     .button
       display: inline-block
-      width: 25px
+      width: 40px
+      height: 40px
       margin: 3px
+      padding: 7px
+      border-radius: 100%
+      border: 1px solid #989DA1
+      transition: 400ms
     svg
-      border-radius: 5px
+      // border-radius: 5px
       g
         transition: 800ms
     .button:hover
+      border: 1px solid $button-hover-color
       color: $button-hover-color
       svg g
         fill: $button-hover-color
