@@ -45,13 +45,15 @@ svg g
   min-width: 100px
   min-height: 100px
   padding: 40px 30px
-  display: flex
-  flex-direction: column
-  justify-content: center
-  align-items: center
+  display: table
+  // display: flex
+  // flex-direction: column
+  // justify-content: center
+  // align-items: center
   text-align: center
   margin: auto
   .card-image
+    margin: auto
     min-width: 125px
     min-height: 125px
     max-width: 125px
@@ -73,10 +75,12 @@ svg g
     letter-spacing: .1rem
     font-weight: 200
   .social-links
-    display: flex
+    margin: auto
+    display: table
     transition: 400ms
     justify-content: space-between
     .button
+      display: inline-block
       width: 25px
       margin: 3px
     svg
