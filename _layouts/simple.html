@@ -42,9 +42,11 @@
         {% if whichColumn == 0 %}
         <div class='pair-links'>
           {% endif %}
-          <div class='simple-button'>
-            <a href='{{link.link}}'>{{link.name}}</a>
-          </div>
+          <a href='{{link.link}}'class='simple-button'>
+            <div class='button-text'>
+              {{link.name}}
+            </div>
+          </a>
           {% if forloop.last or whichColumn == 1%}
         </div>
         {% endif %}
