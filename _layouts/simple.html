@@ -27,7 +27,7 @@
     <div class='social-links'>
       {% for social in site.data[page.data_file].card.social-links %}
       <a class='button'  href='{{social[1]}}'>
-        {% assign svg = social[0] | append: '_icon.svg' %}
+        {% assign svg = social[0] | append: '_simple_icon.svg' %}
         {% include svg/{{svg}} %}
       </a>
       {% endfor %}
