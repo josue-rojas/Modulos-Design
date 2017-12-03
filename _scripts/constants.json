@@ -11,10 +11,14 @@
             "scrollexample.yml", 
             "example1.yml", 
             "fullgallery.yml", 
-            "modulos-design.yml"
+            "modulos-design.yml", 
+            "simple.yml"
         ], 
         "scrollSite": [
             "scrollexample.yml"
+        ], 
+        "simple": [
+            "simple.yml"
         ], 
         "slideshow": [
             "example1.yml"
@@ -45,7 +49,8 @@
             "scrollexample.yml", 
             "example1.yml", 
             "fullgallery.yml", 
-            "modulos-design.yml"
+            "modulos-design.yml", 
+            "simple.yml"
         ], 
         "navbar": [
             "Showcase.yml", 
@@ -57,11 +62,15 @@
         "service": [
             "Showcase.yml"
         ], 
+        "simple": [
+            "simple.yml"
+        ], 
         "sizes": [
             "scrollexample.yml", 
             "example1.yml", 
             "fullgallery.yml", 
-            "modulos-design.yml"
+            "modulos-design.yml", 
+            "simple.yml"
         ], 
         "slideshow": [
             "example1.yml"

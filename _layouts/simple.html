@@ -1,0 +1,71 @@
+<!-- inspired by https://html5up.net/identity -->
+<!-- this is meant to be one page resembling a business card -->
+<!-- this doesnt use partials (thus the name) -->
+<!DOCTYPE html>
+<html>
+<head>
+  {% include resources.html %}
+  <title>{{ page.title }}</title>
+</head>
+<body>
+  <div class='background'>
+    <div class='dark-layer'></div>
+    <div class='image' style="background-image:url('{{site.data[page.data_file].background-image}}')"></div>
+  </div>
+  <div class='card'>
+    <!-- profile image -->
+    <div class='card-image' style="background-image:url('{{site.data[page.data_file].card.image}}')"></div>
+    <!-- name and description -->
+    <div class='name'>
+      {{site.data[page.data_file].card.name}}
+    </div>
+    <div class='description'>
+      {{site.data[page.data_file].card.description}}
+    </div>
+    <!-- social links -->
+    {% if site.data[page.data_file].card.social-links %}
+    <div class='social-links'>
+      {% for social in site.data[page.data_file].card.social-links %}
+      <a class='button'  href='{{social[1]}}'>
+        {% assign svg = social[0] | append: '_icon.svg' %}
+        {% include svg/{{svg}} %}
+      </a>
+      {% endfor %}
+    </div>
+    {% endif %}
+    <!-- other links -->
+    {% if site.data[page.data_file].card.links %}
+    <div class='link-list-wrapper'>
+      <div class='links-list'>
+        {% for link in site.data[page.data_file].card.links %}
+        {% assign whichColumn = forloop.index0 | modulo:2 %}
+        {% if whichColumn == 0 %}
+        <div class='pair-links'>
+          {% endif %}
+          <div class='simple-button'>
+            <a href='{{link.link}}'>{{link.name}}</a>
+          </div>
+          {% if forloop.last or whichColumn == 1%}
+        </div>
+        {% endif %}
+        {% endfor%}
+      </div>
+      <div class='dropdown'>
+        <?xml version="1.0" encoding="UTF-8"?>
+        <svg viewBox="0 0 10 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+          <title>chevron-down</title>
+          <desc>Created with Sketch.</desc>
+          <defs></defs>
+          <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="chevron-down" fill="#989DA1">
+              <polygon id="Shape" points="5 11 0 6 1.5 4.5 5 8.25 8.5 4.5 10 6"></polygon>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</body>
+</html>

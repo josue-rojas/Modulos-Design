@@ -1,0 +1,26 @@
+---
+  sass:
+    - "sizes.sass"
+    - "mixins.sass"
+    - "simple.sass"
+  coffee:
+    - "main.coffee"
+    - "simple.coffee"
+  css:
+    - "https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,200,400"
+  background-image: '/resources/simple/space.jpg'
+  card:
+    image: 'https://avatars0.githubusercontent.com/u/10749061?v=4'
+    name: 'Josue Rojas'
+    description: 'Software Developer / Wonderer'
+    social-links:
+      LinkedIn: "https://www.linkedin.com/in/josuerojasz/"
+      Facebook: "https://www.facebook.com/withcheesepls"
+      Instagram: "https://www.instagram.com/withcheesepls/"
+    links:
+      -
+        name: 'Projects'
+        link: '/projects'
+      -
+        name: 'Resume'
+        link: 'https://goo.gl/yFs4U6'
