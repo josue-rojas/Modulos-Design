@@ -5,6 +5,10 @@
     - "full-gallery.sass"
   coffee:
     - "main.coffee"
+  css:
+    - "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+  js:
+    - "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
   partials:
     -
       partial-name: 'full-gallery'

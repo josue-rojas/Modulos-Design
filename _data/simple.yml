@@ -7,7 +7,10 @@
     - "main.coffee"
     - "simple.coffee"
   css:
+    - "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
     - "https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,200,400"
+  js:
+    - "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
   background-image: '/resources/simple/space.jpg'
   card:
     image: 'https://avatars0.githubusercontent.com/u/10749061?v=4'
