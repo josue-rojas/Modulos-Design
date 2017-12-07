@@ -1,5 +1,6 @@
 ---
   sass:
+    - "defaults.sass"
     - "sizes.sass"
     - "mixins.sass"
     - "footer.sass"
@@ -10,6 +11,8 @@
     - "main.coffee"
     - "footer.coffee"
     - "slideshow.coffee"
+  js:
+    - "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
   partials:
     -
       partial-name: "slideshow"

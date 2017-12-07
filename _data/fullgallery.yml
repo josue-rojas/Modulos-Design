@@ -1,10 +1,13 @@
 ---
   sass:
+    - "defaults"
     - "sizes.sass"
     - "mixins.sass"
     - "full-gallery.sass"
   coffee:
     - "main.coffee"
+  js:
+    - "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
   partials:
     -
       partial-name: 'full-gallery'

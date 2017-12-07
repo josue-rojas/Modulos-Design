@@ -38,6 +38,13 @@
         "column-gallery-3": [
             "example1.yml"
         ], 
+        "defaults": [
+            "modulos-design.yml", 
+            "simple.yml", 
+            "fullgallery.yml", 
+            "scrollexample.yml", 
+            "example1.yml"
+        ], 
         "footer": [
             "example1.yml"
         ], 
