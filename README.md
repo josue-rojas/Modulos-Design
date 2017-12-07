@@ -70,3 +70,4 @@ open http://localhost:4000
 - [To run scripts when change is made locally](https://github.com/emcrisostomo/fswatch)
 - [Script to join coffee](https://stackoverflow.com/questions/4575260/join-multiple-coffeescript-files-into-one-file-multiple-subdirectories)
 - [Run local node packages in terminal](https://stackoverflow.com/questions/9679932/how-to-use-package-installed-locally-in-node-modules)
+- [HTML compress using liquid templating](https://github.com/penibelst/jekyll-compress-html)

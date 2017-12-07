@@ -14,3 +14,7 @@ exclude:
   - README.md
   - _data/Readme.md
   - _sass/Readme.md
+compress_html:
+  clippings: all
+  comments:  ["<!-- ", " -->"]
+  endings:   all
