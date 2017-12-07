@@ -32,7 +32,8 @@ document.addEventListener "DOMContentLoaded", ->
   if $currentTab.length
     activeTab(currentTab)
 
-$(window).on 'load', ->
-  start = ->
-    $('.start').removeClass('start')
-  setTimeout(start, 0)
+# animation in css
+# $(window).on 'load', ->
+#   start = ->
+#     $('.start').removeClass('start')
+#   setTimeout(start, 0)
