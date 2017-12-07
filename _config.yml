@@ -2,6 +2,8 @@ name: Showcase
 markdown: kramdown
 plugins:
   - jekyll-coffeescript
+sass:
+  style: compressed
 exclude:
   - _scripts
   - _coffee

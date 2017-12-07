@@ -59,9 +59,7 @@
         "scrollSite": [
             "scrollexample.yml"
         ], 
-        "service": [
-            "Showcase.yml"
-        ], 
+        "service": [], 
         "simple": [
             "simple.yml"
         ], 
