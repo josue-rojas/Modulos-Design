@@ -41,10 +41,7 @@
 <link rel="stylesheet" href='{{ stylesheet }}'>
 {% endfor %}
 <!-- JS -->
-<!--  imports customs js for page-->
-<!-- first is the combined coffee -->
-<script src='/resources/js/{{ page.data_file }}.js'></script>
-<!-- then is the extra js -->
 {% for j in site.data[page.data_file].js %}
   <script src='{{j}}'></script>
 {% endfor %}
+<script src='/resources/js/{{ page.data_file }}.js'></script>

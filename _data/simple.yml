@@ -1,5 +1,6 @@
 ---
   sass:
+    - "defaults"
     - "sizes.sass"
     - "mixins.sass"
     - "simple.sass"
@@ -7,7 +8,6 @@
     - "main.coffee"
     - "simple.coffee"
   css:
-    - "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
     - "https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,200,400"
   js:
     - "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
