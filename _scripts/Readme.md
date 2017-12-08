@@ -7,3 +7,6 @@
 
 - server.command
   > runs jekyll server and at the same time runs fswatch which watches for changges in \_coffee, \_sass, and \_data folder to run the prerun.py script.
+
+- export.py
+  >[README](https://github.com/josuerojasrojas/export-jekyll)
