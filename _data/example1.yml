@@ -17,10 +17,10 @@
     -
       partial-name: "slideshow"
       images:
-        - "example1/test_1.jpg"
-        - "example1/test_2.jpg"
-        - "example1/test_3.jpg"
-        - "example1/test_4.jpg"
+        - "/resources/example1/test_1.jpg"
+        - "/resources/example1/test_2.jpg"
+        - "/resources/example1/test_3.jpg"
+        - "/resources/example1/test_4.jpg"
       speed: 2000
       auto: false
       controls: false

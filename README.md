@@ -35,6 +35,8 @@ open http://localhost:4000
 
 ### Folder structures
 
+(some readmes have !note so i can find stuff that i though about at that moment so i can do it later which is now?)
+
 - \_coffee
 > folder that contains all coffee file for the partials and stuff
 > [Readme](https://github.com/josuerojasrojas/Showcase/blob/master/_coffee/Readme.md)

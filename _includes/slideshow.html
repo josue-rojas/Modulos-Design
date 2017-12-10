@@ -7,7 +7,7 @@
   {% endif %}
   <div class='image-wrapper'>
   {% for image in site.data[page.data_file].partials[id].images %}
-    <img src='/resources/{{image}}' data-pos='{{forloop.index0}}' class='slide
+    <img src='{{image}}' data-pos='{{forloop.index0}}' class='slide
     {% if forloop.index0==0%}
     active
     {% endif %}
@@ -35,5 +35,5 @@
     </div> -->
   </div>
 {% endif %}
-<img src='/resources/{{site.data[page.data_file].partials[id].images[0]}}' class='img-size'>
+<img src='{{site.data[page.data_file].partials[id].images[0]}}' class='img-size'>
 </div>
