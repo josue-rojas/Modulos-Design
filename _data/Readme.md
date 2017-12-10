@@ -1,4 +1,4 @@
-(!NOTE EDIT THIS AND MOVE TO THE DOCS FOLDER)
+(!NOTETODOTODO EDIT THIS AND MOVE TO THE DOCS FOLDER)
 # About this folder:
 
 this folder contains configs for certain things of the page
