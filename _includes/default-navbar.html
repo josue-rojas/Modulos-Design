@@ -1,0 +1,20 @@
+<nav class="default-nav">
+  <div class='main'>
+    <a href='{{site.data[page.data_file].partials[id].title-link}}'>
+      <div class='title'>{{site.data[page.data_file].partials[id].title}}</div>
+      <div class='sub-title'>{{site.data[page.data_file].partials[id].sub-title}}</div>
+    </a>
+    <div class='hamburger-menu' onclick='navbarShow()'>
+      <div class='line top'></div>
+      <div class='line mid'></div>
+      <div class='line bottom'></div>
+    </div>
+  </div>
+  <div class='links'>
+    <div class='link-list'>
+      {% for link in site.data[page.data_file].partials[id].links %}
+      <a class='link' href='{{link.link}}'>{{link.title}}</a>
+      {% endfor %}
+    </div>
+  </div>
+</nav>

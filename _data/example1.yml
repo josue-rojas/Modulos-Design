@@ -3,17 +3,34 @@
     - "defaults.sass"
     - "sizes.sass"
     - "mixins.sass"
+    - "default-navbar.sass"
     - "footer.sass"
     - "slideshow.sass"
-    - "navbar.sass"
     - "column-gallery-3.sass"
   coffee:
     - "main.coffee"
+    - "default-navbar.coffee"
     - "footer.coffee"
     - "slideshow.coffee"
   js:
     - "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
   partials:
+    -
+      partial-name: "default-navbar"
+      title: 'Josue Rojas'
+      title-link: '#'
+      sub-title: 'Conquere of Worlds'
+      links:
+        -
+          title: 'hello'
+          link: '#hello'
+        -
+          title: 'other'
+          link: '#other'
+        -
+          title: 'home'
+          link: '#home'
+      id: 0
     -
       partial-name: "slideshow"
       images:
@@ -25,7 +42,7 @@
       auto: false
       controls: false
       fade: false
-      id: 0
+      id: 1
     -
       partial-name: "column-gallery-3"
       images:
@@ -47,4 +64,4 @@
         -
           source: '/resources/example1/test_2.jpg'
           text-overlay: 'might add links'
-      id: 1
+      id: 2

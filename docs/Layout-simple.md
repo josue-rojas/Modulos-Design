@@ -1,6 +1,6 @@
 ### About \_layouts/simple
 
-(!NOTETODOTODO ADD A PREVIEW IMAGE HERE)
+(!NOTETODO ADD A PREVIEW IMAGE HERE)
 
 __This layout does not use partials__
 
