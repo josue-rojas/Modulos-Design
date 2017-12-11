@@ -1,6 +1,6 @@
 ### About \_layouts/simple
 
-(!TODO ADD A PREVIEW IMAGE HERE)
+<img src='https://github.com/josuerojasrojas/Modulos-Design/blob/master/docs/Layout-simple.png?raw=true'>
 
 __This layout does not use partials__
 
@@ -15,7 +15,7 @@ The data file example and explanation:
     - "mixins.sass"
     - "simple.sass"  
   coffee:
-    - "simple.coffee" 
+    - "simple.coffee"
   css:
      # This is the font it use, it can be replace if you override it in a new sass file after simple.sass
     - "https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,200,400"
