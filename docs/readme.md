@@ -31,7 +31,7 @@ column-box-2 (!NOTETODO NEED TO WRITE)
 
 column-gallery-3 (!NOTETODO NEED TO WRITE)
 
-default-navbar (!NOTETODO NEED TO WRITE)
+[default-navbar](https://github.com/josuerojasrojas/Modulos-Design/blob/master/docs/Partials-partials.md)
 
 footer (!NOTETODO NEED TO WRITE)
 
@@ -39,7 +39,7 @@ full-gallery (!NOTETODO NEED TO WRITE)
 
 map-box (!NOTETODO NEED TO WRITE)
 
-partials (!NOTETODO NEED TO WRITE)
+[partials](https://github.com/josuerojasrojas/Modulos-Design/blob/master/docs/Partials-partials.md)
 
 resources (!NOTETODO NEED TO WRITE)
 
