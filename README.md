@@ -35,7 +35,7 @@ open http://localhost:4000
 
 ### Folder structures
 
-(some readmes have !NOTETODO so i can find stuff that i though about at that moment so i can do it later which is now?)
+(some readmes have !TODO so i can find stuff that i though about at that moment so i can do it later which is now?)
 
 - \_coffee
 > folder that contains all coffee file for the partials and stuff

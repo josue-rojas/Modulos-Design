@@ -4,7 +4,7 @@ This is a very basic navbar.
 
 It is only used on layouts that use partials and do no have a navbar. For example default or contentonly.
 
-In the data file(!NOTETODO LINK ABOUT DATA FILES) it should look include:
+In the data file(!TODO LINK ABOUT DATA FILES) it should look include:
 
 ```YAML
 ---
