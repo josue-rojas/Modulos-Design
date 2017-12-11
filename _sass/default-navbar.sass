@@ -32,9 +32,18 @@ $hover-color: rgb(5, 251, 255)
       // display: flex
       flex-direction: column
       margin: auto .8rem
-      // transition: 400ms
-      .link:hover
-        color: $hover-color
+      .link
+        border: 1px solid rgba(0, 0, 0, 0)
+        font-weight: 300
+        font-size: 1.2rem
+        text-align: center
+        margin: 5px auto
+        transition: color 400ms
+        padding: 5px 15px
+        &:hover
+          border-left: 1px solid $hover-color
+          border-right: 1px solid $hover-color
+          color: $hover-color
     .active
       color: $hover-color
   .hamburger-menu
@@ -86,5 +95,5 @@ $hover-color: rgb(5, 251, 255)
       margin: inherit
       .link-list
         display: inherit
-
-      // margin: auto
+        .link
+          margin: 0 10px
