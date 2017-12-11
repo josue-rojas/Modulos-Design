@@ -4,6 +4,9 @@
             "modulos-design.yml"
         ], 
         "coffee": [], 
+        "default-navbar": [
+            "example1.yml"
+        ], 
         "footer": [
             "example1.yml"
         ], 
@@ -38,6 +41,9 @@
         "column-gallery-3": [
             "example1.yml"
         ], 
+        "default-navbar": [
+            "example1.yml"
+        ], 
         "defaults": [
             "modulos-design.yml", 
             "simple.yml", 
@@ -59,10 +65,7 @@
             "modulos-design.yml", 
             "simple.yml"
         ], 
-        "navbar": [
-            "Showcase.yml", 
-            "example1.yml"
-        ], 
+        "navbar": [], 
         "scrollSite": [
             "scrollexample.yml"
         ], 

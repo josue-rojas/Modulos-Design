@@ -10,42 +10,42 @@
 ### LAYOUTS
 __Every layout is different and is handle different in the data file__
 
-aesthetic (!NOTETODOTODO NEED TO WRITE)
+aesthetic (!NOTETODO NEED TO WRITE)
 
 [compress](https://github.com/josuerojasrojas/Modulos-Design/blob/master/docs/Layout-compress.md)
 
 [simple](https://github.com/josuerojasrojas/Modulos-Design/blob/master/docs/Layout-simple.md)
 
-contentonly (!NOTETODOTODO NEED TO WRITE)
+contentonly (!NOTETODO NEED TO WRITE)
 
-default (!NOTETODOTODO NEED TO WRITE)
+default (!NOTETODO NEED TO WRITE)
 
 ### Partials
 __Not every partial is made for any layout.__
 
-aesthetic-map-box (!NOTETODOTODO NEED TO WRITE)
+aesthetic-map-box (!NOTETODO NEED TO WRITE)
 
-aesthetic-simple-box (!NOTETODOTODO NEED TO WRITE)
+aesthetic-simple-box (!NOTETODO NEED TO WRITE)
 
-column-box-2 (!NOTETODOTODO NEED TO WRITE)
+column-box-2 (!NOTETODO NEED TO WRITE)
 
-column-gallery-3 (!NOTETODOTODO NEED TO WRITE)
+column-gallery-3 (!NOTETODO NEED TO WRITE)
 
-footer (!NOTETODOTODO NEED TO WRITE)
+default-navbar (!NOTETODO NEED TO WRITE)
 
-full-gallery (!NOTETODOTODO NEED TO WRITE)
+footer (!NOTETODO NEED TO WRITE)
 
-map-box (!NOTETODOTODO NEED TO WRITE)
+full-gallery (!NOTETODO NEED TO WRITE)
 
-navbar (!NOTETODOTODO NEED TO WRITE)
+map-box (!NOTETODO NEED TO WRITE)
 
-partials (!NOTETODOTODO NEED TO WRITE)
+partials (!NOTETODO NEED TO WRITE)
 
-resources (!NOTETODOTODO NEED TO WRITE)
+resources (!NOTETODO NEED TO WRITE)
 
-scrollSite (!NOTETODOTODO NEED TO WRITE)
+scrollSite (!NOTETODO NEED TO WRITE)
 
-services (!NOTETODOTODO NEED TO WRITE)
+services (!NOTETODO NEED TO WRITE)
 
 
-(!NOTETODOTODO LINK EVERYTHING)
+(!NOTETODO LINK EVERYTHING)
