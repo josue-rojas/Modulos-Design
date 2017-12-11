@@ -31,7 +31,7 @@ __Not every partial is made for any layout.__
 
 - column-gallery-3 (!NOTETODO NEED TO WRITE)
 
-- [default-navbar](https://github.com/josuerojasrojas/Modulos-Design/blob/master/docs/Partial-partials.md)
+- [default-navbar](https://github.com/josuerojasrojas/Modulos-Design/blob/master/docs/Partial-default-navbar.md)
 
 - footer (!NOTETODO NEED TO WRITE)
 
