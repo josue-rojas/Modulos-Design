@@ -35,6 +35,7 @@ open http://localhost:4000
 
 ### [Read more on how tos, layouts, pages, partials, and other things about this project here](https://github.com/josuerojasrojas/Modulos-Design/tree/master/docs)
 
+(!TODO organize images folder to be in folder for the pages)
 
 ### Some stuff used
 - [To run scripts when change is made locally](https://github.com/emcrisostomo/fswatch)

@@ -7,6 +7,8 @@
 
 - [How to make a layout](https://github.com/josuerojasrojas/Modulos-Design/blob/master/docs/HowToMakeALayout.md)
 
+- (!TODO write on how to overide sass, every overide should be in \_sass/CustomSass)
+
 ### LAYOUTS
 __Every layout is different and is handle different in the data file__
 

@@ -1,0 +1,12 @@
+<div class='slide-slideshow'>
+  <div class='real-images'>
+    {% for image in site.data[page.data_file].partials[id].images %}
+    <div class='image' style='background-image:url("{{image}}")'></div>
+    {% endfor %}
+  </div>
+  <div class='marquee-images'>
+    {% for image in site.data[page.data_file].partials[id].images %}
+    <div class='image' style='background-image:url("{{image}}")'></div>
+    {% endfor %}
+  </div>
+</div>

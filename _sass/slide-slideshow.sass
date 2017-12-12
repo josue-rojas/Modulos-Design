@@ -1,0 +1,28 @@
+// !TODO make marquee time a variable to edit in js
+
+.slide-slideshow
+  display: flex
+  overflow: hidden
+  max-height: 500px
+  .real-images, .marquee-images
+    max-height: 500px
+    display: flex
+    float: left
+    position: relative
+    transform: translate3d(0,0,0)
+    animation: marquee 15s linear infinite
+    .image
+      background-size: cover
+      background-position: center
+      background-repeat: no-repeat
+      height: 500px
+      max-width: 500px
+      width: 500px
+
+// https://stackoverflow.com/questions/24152925/using-jquery-to-set-css-keyframe
++keyframes(marquee)
+  0%
+    transform: translateX(0)
+  100%
+    // !TODO the translate should be a variable set by js (changes with different images and widths (for now width are set to 500 so it is amount of images*500))
+    transform: translateX(-1500px)
