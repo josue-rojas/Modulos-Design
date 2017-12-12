@@ -1,0 +1,40 @@
+---
+  sass:
+    - "defaults.sass"
+    - "sizes.sass"
+    - "mixins.sass"
+    - "default-navbar.sass"
+  coffee:
+    - "main.coffee"
+    - "default-navbar.coffee"
+  js:
+    - "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+  partials:
+    -
+      partial-name: "default-navbar"
+      title: 'Yegeta Barya Habtamu'
+      title-link: ''
+      sub-title: '<u>Gospel</u> Ministry'
+      links:
+        -
+          title: 'Home'
+          link: '#hello'
+        -
+          title: 'About'
+          link: '#other'
+        -
+          title: 'Ministry'
+          link: '#home'
+        -
+          title: 'Discipleship'
+          link: '#home'
+        -
+          title: 'Media'
+          link: '#home'
+        -
+          title: 'Contact'
+          link: '#home'
+        -
+          title: 'Gallery'
+          link: '#home'
+      id: 0
