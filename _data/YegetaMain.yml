@@ -4,6 +4,8 @@
     - "sizes.sass"
     - "mixins.sass"
     - "default-navbar.sass"
+    - "slide-slideshow.sass"
+    - "CustomSass/YegetaMain.sass"
   coffee:
     - "main.coffee"
     - "default-navbar.coffee"
@@ -12,8 +14,11 @@
   partials:
     -
       partial-name: "default-navbar"
+      banner:
+        background-image: 'resources/images/Yegeta/banner.jpeg'
+        text: 'And he said to them, “Go into all the world and proclaim the gospel to the whole creation" - Mark 16:15'
       title: 'Yegeta Barya Habtamu'
-      title-link: ''
+      title-link: '/'
       sub-title: '<u>Gospel</u> Ministry'
       links:
         -
@@ -38,3 +43,14 @@
           title: 'Gallery'
           link: '#home'
       id: 0
+    -
+      partial-name: 'slide-slideshow'
+      images:
+        - "/resources/images/Yegeta/img_0.JPG"
+        - "/resources/images/Yegeta/img_1.JPG"
+        - "/resources/images/Yegeta/img_2.JPG"
+        - "/resources/images/Yegeta/img_3.JPG"
+        - "/resources/images/Yegeta/img_4.JPG"
+        - "/resources/images/Yegeta/img_5.JPG"
+        - "/resources/images/Yegeta/img_6.JPG"
+      id: 1

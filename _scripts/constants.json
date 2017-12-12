@@ -86,6 +86,9 @@
             "simple.yml", 
             "YegetaMain.yml"
         ], 
+        "slide-slideshow": [
+            "YegetaMain.yml"
+        ], 
         "slideshow": [
             "example1.yml"
         ]
