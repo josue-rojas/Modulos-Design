@@ -17,6 +17,9 @@
   partials:
     -
       partial-name: "default-navbar"
+      banner:
+        # background-image: '/resources/example1/test_1.jpg'
+        text: 'This is some text on the banner'
       title: 'Josue Rojas'
       title-link: '#'
       sub-title: 'Conquere of Worlds'

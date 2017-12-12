@@ -1,3 +1,8 @@
+{% if site.data[page.data_file].partials[id].banner %}
+<div class='banner' style="background-image:url('{{site.data[page.data_file].partials[id].banner.background-image}}')">
+  <div class='banner-text'>{{site.data[page.data_file].partials[id].banner.text}}</div>
+</div>
+{% endif %}
 <nav class="default-nav">
   <div class='main'>
     <a href='{{site.data[page.data_file].partials[id].title-link}}'>

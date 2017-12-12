@@ -21,7 +21,12 @@ In the data file(!TODO LINK ABOUT DATA FILES) it should look include:
   partials:
     -
       partial-name: "default-navbar"
-      title: 'Josue Rojas'
+      # banner is optional without this it will just show the navbar
+      banner:
+        # background is optional for the banner but it will show a color (which can be overrident of course)
+        background-image: '/resources/example1/test_1.jpg'
+        text: 'This is some text on the banner'
+      title: 'Josue Rojas
       title-link: '#'
       sub-title: 'Conquerer of Worlds'
       # links are yout own links and titles
