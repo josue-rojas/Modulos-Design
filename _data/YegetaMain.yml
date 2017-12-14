@@ -20,13 +20,14 @@
       title: 'Yegeta Barya Habtamu'
       title-link: '/'
       sub-title: '<u>Gospel</u> Ministry'
+      active-link: 'Home'
       links:
         -
           title: 'Home'
-          link: '#hello'
+          link: '/'
         -
           title: 'About'
-          link: '#other'
+          link: '#'
         -
           title: 'Ministry'
           link: '#home'
