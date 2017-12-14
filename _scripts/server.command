@@ -27,4 +27,4 @@ echo -e  $COL_YELLOW$data$COL_RESET
 echo
 
 
-cd $root; mkdir '_junk'; jekyll server & cd $scripts; fswatch -0 $coffee $sass $data |  xargs -0 -n1 python $pythonScript
+cd $root; mkdir '_junk'; jekyll server --unpublished & cd $scripts; fswatch -0 $coffee $sass $data |  xargs -0 -n1 python $pythonScript
