@@ -18,7 +18,11 @@
   <div class='links'>
     <div class='link-list'>
       {% for link in site.data[page.data_file].partials[id].links %}
-      <a class='link' href='{{link.link}}'>{{link.title}}</a>
+      <a class='link
+      {% if link.title == site.data[page.data_file].partials[id].active-link %}
+      active
+      {% endif %}
+      ' href='{{link.link}}'>{{link.title}}</a>
       {% endfor %}
     </div>
   </div>

@@ -29,6 +29,8 @@ In the data file(!TODO LINK ABOUT DATA FILES) it should look include:
       title: 'Josue Rojas
       title-link: '#'
       sub-title: 'Conquerer of Worlds'
+      # active link is to set which page is presented 
+      active-link: 'other'
       # links are yout own links and titles
       links:
         -
