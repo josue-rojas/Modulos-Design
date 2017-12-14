@@ -22,12 +22,9 @@ body
 .slide-slideshow
   .real-images, .marquee-images
     .image
-      animation: marquee 10s linear infinite
+      animation: marquee 15s linear infinite
 
 
 +keyframes(marquee)
-  0%
-    transform: translateX(0)
   100%
-    // the translate should be a variable set by js (changes with different images and widths (for now width are set to 500 so it is amount of images*500))
     transform: translateX(-700%)
