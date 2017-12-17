@@ -4,7 +4,7 @@ This is a very basic navbar.
 
 It is only used on layouts that use partials and do no have a navbar. For example default or contentonly.
 
-In the data file(!TODO LINK ABOUT DATA FILES) it should look include:
+In the data file(!TODO LINK ABOUT DATA FILES) it should look and include:
 
 ```YAML
 ---
@@ -29,7 +29,7 @@ In the data file(!TODO LINK ABOUT DATA FILES) it should look include:
       title: 'Josue Rojas
       title-link: '#'
       sub-title: 'Conquerer of Worlds'
-      # active link is to set which page is presented 
+      # active link is to set which page is presented
       active-link: 'other'
       # links are yout own links and titles
       links:
