@@ -13,7 +13,7 @@
     - "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
   background-image: '/resources/images/getenetBack.jpg'
   card:
-    image: 'resources/images/profile_image.JPG'
+    image: '/resources/images/profile_image.JPG'
     name: 'Getenet Laloto'
     description: 'Software Engineer'
     social-links:
