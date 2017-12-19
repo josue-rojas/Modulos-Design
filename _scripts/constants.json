@@ -18,13 +18,15 @@
             "fullgallery.yml", 
             "modulos-design.yml", 
             "simple.yml", 
-            "YegetaMain.yml"
+            "YegetaMain.yml", 
+            "getenet.yml"
         ], 
         "scrollSite": [
             "scrollexample.yml"
         ], 
         "simple": [
-            "simple.yml"
+            "simple.yml", 
+            "getenet.yml"
         ], 
         "slideshow": [
             "example1.yml"
@@ -54,7 +56,8 @@
             "fullgallery.yml", 
             "scrollexample.yml", 
             "example1.yml", 
-            "YegetaMain.yml"
+            "YegetaMain.yml", 
+            "getenet.yml"
         ], 
         "footer": [
             "example1.yml", 
@@ -70,7 +73,8 @@
             "fullgallery.yml", 
             "modulos-design.yml", 
             "simple.yml", 
-            "YegetaMain.yml"
+            "YegetaMain.yml", 
+            "getenet.yml"
         ], 
         "navbar": [], 
         "scrollSite": [
@@ -78,7 +82,8 @@
         ], 
         "service": [], 
         "simple": [
-            "simple.yml"
+            "simple.yml", 
+            "getenet.yml"
         ], 
         "sizes": [
             "scrollexample.yml", 
@@ -86,7 +91,8 @@
             "fullgallery.yml", 
             "modulos-design.yml", 
             "simple.yml", 
-            "YegetaMain.yml"
+            "YegetaMain.yml", 
+            "getenet.yml"
         ], 
         "slide-slideshow": [
             "YegetaMain.yml"

@@ -6,6 +6,7 @@
 # clean comments/ remove useless ones
 #
 # profile page export
+# python export.py -i '/Users/josuerojas/GitHub/Modulos-Design/pages/getenet/main.html' -o '/Users/josuerojas/GitHub/getenet' -l '/'
 # python export.py -i '/Users/josuerojas/GitHub/Modulos-Design/pages/examples/simple-theme.html' -o '/Users/josuerojas/GitHub/josuerojasrojas.github.io' -l '/'
 # python export.py -i '/Users/josuerojas/GitHub/Modulos-Design/pages/main/home.html' -o '/Users/josuerojas/Desktop/temp' -l '/'
 # python export.py -i '/Users/josuerojas/GitHub/Modulos-Design/pages/examples/scrollexample.html' -o '/Users/josuerojas/Desktop/temp' -p
