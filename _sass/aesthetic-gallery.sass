@@ -1,0 +1,21 @@
+.gallery
+  .images
+    .image
+      display: block
+      width: 90%
+      height: 200px
+      background-position: center
+      background-repeat: no-repeat
+      background-size: cover
+      margin: 10px auto 10px auto
+      transition: opacity 400ms
+      &:hover
+        opacity: .8
+        cursor: pointer
+      +small-devices
+        float: left
+        width: 45%
+        margin: 10px 2.5% 10px 2.5%
+        &:nth-child(1):nth-last-child(1)
+          float: none
+          margin: auto

@@ -6,6 +6,7 @@
     - "aesthetic.sass"
     - "aesthetic-map-box.sass"
     - "aesthetic-simple-box.sass"
+    - "aesthetic-gallery.sass"
   coffee:
     - "main.coffee"
     - "aesthetic.coffee"
@@ -25,6 +26,9 @@
       -
         link: '#services'
         title: 'Services'
+      -
+        link: '#gallery'
+        title: 'Gallery'
       -
         link: '#team'
         title: 'Team'
@@ -64,3 +68,15 @@
       image: "/resources/images/services.jpg"
       text: "We are <strong>designers, makers, and maintainers</strong> of websites. We aim to provide the best quality web-development at a low cost. We do this by beign passionate about our work. Our passion is what drives us to make the best for our customers.<br> Our services include <strong>designing, making, and maintaining websites</strong>. We work with our customers to make the best design that fits their requesites. We make the website to fill every requesite, but we know that often the requesites change, that is why we are maintainers that make the process of changing things very quickly ans easily."
       id: 3
+    -
+      partial-name: "aesthetic-gallery"
+      link: "gallery"
+      title: "Gallery"
+      images:
+        -
+          src: '/resources/images/example1.jpg'
+          link: 'http://josuerz.xyz'
+        -
+          src: '/resources/images/example2.jpg'
+          link: 'http://dream-deferred.xyz'
+      id: 4

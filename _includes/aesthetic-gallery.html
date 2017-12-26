@@ -1,0 +1,14 @@
+<div class='tab gallery' id='{{site.data[page.data_file].partials[id].link}}'>
+  <div class='box-default'>
+    <div class='top'>
+      <div class='title'>{{site.data[page.data_file].partials[id].title}}</div>
+      <div class='close' onclick='closeTab()'></div>
+    </div>
+    <div class='images'>
+      {% for image in site.data[page.data_file].partials[id].images %}
+      <a class='image' style='background-image:url({{image.src}})' href='{{image.link}}'  target='_blank'></a>
+      {% endfor %}
+    </div>
+    </div>
+  </div>
+</div>
