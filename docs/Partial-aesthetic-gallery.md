@@ -1,6 +1,6 @@
 ### About \_includes/aesthetic-gallery
 
-<img src='https://github.com/josuerojasrojas/Modulos-Design/blob/master/docs/Partial-aesthetic-gallry?raw=true'>
+<img src='https://github.com/josuerojasrojas/Modulos-Design/blob/master/docs/Partial-aesthetic-gallery?raw=true'>
 
 This partial is for a gallery of (link)images in <strong>aesthetic layout only</strong>.
 
