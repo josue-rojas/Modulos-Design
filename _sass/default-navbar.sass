@@ -44,26 +44,27 @@ $hover-color: rgb(5, 251, 255)
     overflow: hidden
     transition: 400ms
     .link-list
-      // opacity: 0
       transition: opacity 500ms
       display: none
-      // display: flex
       flex-direction: column
       margin: auto .8rem
       .link
         border: 1px solid rgba(0, 0, 0, 0)
-        font-weight: 300
         font-size: 1.2rem
         text-align: center
         margin: 5px auto
         transition: color 400ms
         padding: 5px 15px
-        &:hover
+        &:not(.active)
+          font-weight: 300
+        &:not(.active):hover
           border-left: 1px solid $hover-color
           border-right: 1px solid $hover-color
           color: $hover-color
     .active
-      color: $hover-color
+      font-weight: 400
+      pointer-events: none
+      cursor: default
   .hamburger-menu
     margin: auto 0
     height: 32px
@@ -113,5 +114,3 @@ $hover-color: rgb(5, 251, 255)
       margin: inherit
       .link-list
         display: inherit
-        .link
-          margin: 0 10px

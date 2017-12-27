@@ -10,6 +10,7 @@ First and really important is the [Front Matter](https://jekyllrb.com/docs/front
 - data_file - the file in \_data folder to get all information for the page (!TODO ADD LINK TO DATA FILES HERE)
 - analytics - boolean that says to use analytics or not. This can be false if exporting to be use on some other domain (basically anything that will not use modulos-design.com)
 - favicon - boolean to use favicons or not (!TODO CHANGE THIS WHEN ADD OPTION TO USE OWN FAVICON)
+- published - Set to false if you don’t want a specific post to show up when the site is generated. (used for developing websites that will not be published in this repo)
 
 After the front matter is the html code or partials.
 if using partials from data file then use the partials partial.
@@ -23,6 +24,7 @@ an example of this
   data_file: example1
   analytics: true
   favicon: true
+  published: true
   ---
   {% include partials.html %}
   ```

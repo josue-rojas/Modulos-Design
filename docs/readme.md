@@ -35,7 +35,7 @@ __Not every partial is made for any layout.__
 
 - [default-navbar](https://github.com/josuerojasrojas/Modulos-Design/blob/master/docs/Partial-default-navbar.md)
 
-- footer (!TODO NEED TO WRITE)
+- [footer](https://github.com/josuerojasrojas/Modulos-Design/blob/master/docs/Partial-footer.md) (!TODO NEED TO WRITE)
 
 - full-gallery (!TODO NEED TO WRITE)
 

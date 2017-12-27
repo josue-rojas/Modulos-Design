@@ -5,9 +5,11 @@
     - "mixins.sass"
     - "default-navbar.sass"
     - "slide-slideshow.sass"
+    - "footer.sass"
     - "CustomSass/YegetaMain.sass"
   coffee:
     - "main.coffee"
+    - "footer.coffee"
     - "default-navbar.coffee"
   js:
     - "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
@@ -20,13 +22,14 @@
       title: 'Yegeta Barya Habtamu'
       title-link: '/'
       sub-title: '<u>Gospel</u> Ministry'
+      active-link: 'Home'
       links:
         -
           title: 'Home'
-          link: '#hello'
+          link: '/'
         -
           title: 'About'
-          link: '#other'
+          link: '#'
         -
           title: 'Ministry'
           link: '#home'
@@ -54,3 +57,13 @@
         - "/resources/images/Yegeta/img_5.JPG"
         - "/resources/images/Yegeta/img_6.JPG"
       id: 1
+    -
+      partial-name: 'footer'
+      social:
+        Facebook: 'https://www.facebook.com/habty.bayssa'
+        Instagram: 'https://www.instagram.com/yegta1/'
+        WhatsApp: 'https://api.whatsapp.com/send?phone=13478397738'
+        Twitter: 'https://twitter.com/hg_gutta'
+      main-text: 'Yegeta Barya Habtamu Ministry © 2017'
+      sub-text: '<a href="http://modulos-design.com">Developed by Modulos-Design</a>'
+      id: 2

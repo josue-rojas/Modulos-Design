@@ -9,24 +9,25 @@
             "YegetaMain.yml"
         ],
         "footer": [
-            "example1.yml"
-        ],
+            "example1.yml", 
+            "YegetaMain.yml"
+        ], 
         "main": [
-            "scrollexample.yml",
-            "example1.yml",
-            "fullgallery.yml",
-            "modulos-design.yml",
-            "simple.yml",
-            "YegetaMain.yml",
-            "cat.yml"
-        ],
+            "scrollexample.yml", 
+            "example1.yml", 
+            "fullgallery.yml", 
+            "modulos-design.yml", 
+            "simple.yml", 
+            "YegetaMain.yml", 
+            "getenet.yml"
+        ], 
         "scrollSite": [
             "scrollexample.yml"
         ],
         "simple": [
-            "simple.yml",
-            "cat.yml"
-        ],
+            "simple.yml", 
+            "getenet.yml"
+        ], 
         "slideshow": [
             "example1.yml",
             "cat.yml"
@@ -51,43 +52,49 @@
             "YegetaMain.yml"
         ],
         "defaults": [
-            "modulos-design.yml",
-            "simple.yml",
-            "fullgallery.yml",
-            "scrollexample.yml",
-            "example1.yml",
-            "YegetaMain.yml"
-        ],
+            "modulos-design.yml", 
+            "simple.yml", 
+            "fullgallery.yml", 
+            "scrollexample.yml", 
+            "example1.yml", 
+            "YegetaMain.yml", 
+            "getenet.yml"
+        ], 
         "footer": [
-            "example1.yml"
-        ],
+            "example1.yml", 
+            "YegetaMain.yml"
+        ], 
         "full-gallery": [
             "fullgallery.yml"
         ],
         "map-box": [],
         "mixins": [
-            "scrollexample.yml",
-            "example1.yml",
-            "fullgallery.yml",
-            "modulos-design.yml",
-            "simple.yml",
-            "YegetaMain.yml"
-        ],
+            "scrollexample.yml", 
+            "example1.yml", 
+            "fullgallery.yml", 
+            "modulos-design.yml", 
+            "simple.yml", 
+            "YegetaMain.yml", 
+            "getenet.yml"
+        ], 
+        "navbar": [], 
         "scrollSite": [
             "scrollexample.yml"
         ],
         "service": [],
         "simple": [
-            "simple.yml"
-        ],
+            "simple.yml", 
+            "getenet.yml"
+        ], 
         "sizes": [
-            "scrollexample.yml",
-            "example1.yml",
-            "fullgallery.yml",
-            "modulos-design.yml",
-            "simple.yml",
-            "YegetaMain.yml"
-        ],
+            "scrollexample.yml", 
+            "example1.yml", 
+            "fullgallery.yml", 
+            "modulos-design.yml", 
+            "simple.yml", 
+            "YegetaMain.yml", 
+            "getenet.yml"
+        ], 
         "slide-slideshow": [
             "YegetaMain.yml"
         ],
