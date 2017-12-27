@@ -36,7 +36,10 @@
     "sass": {
         "aesthetic": [
             "modulos-design.yml"
-        ],
+        ], 
+        "aesthetic-gallery": [
+            "modulos-design.yml"
+        ], 
         "aesthetic-map-box": [
             "modulos-design.yml"
         ],

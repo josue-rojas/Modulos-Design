@@ -1,0 +1,34 @@
+.gallery
+  .images
+    .image
+      display: block
+      width: 90%
+      height: 200px
+      background-position: center
+      background-repeat: no-repeat
+      background-size: cover
+      margin: 10px auto 10px auto
+      transition: opacity 400ms
+      position: relative
+      .dark-layer
+        width: 100%
+        height: 100%
+        position: absolute
+        background-color: rgba(0,0,0,.8)
+        opacity: 0
+        display: flex
+        justify-content: center
+        align-items: center
+        color: white
+        transition: opacity 400ms
+      &:hover
+        cursor: pointer
+        .dark-layer
+          opacity: .8
+      +small-devices
+        float: left
+        width: 45%
+        margin: 10px 2.5% 10px 2.5%
+        &:nth-child(1):nth-last-child(1)
+          float: none
+          margin: auto
