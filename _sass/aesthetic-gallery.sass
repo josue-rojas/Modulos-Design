@@ -9,9 +9,22 @@
       background-size: cover
       margin: 10px auto 10px auto
       transition: opacity 400ms
+      position: relative
+      .dark-layer
+        width: 100%
+        height: 100%
+        position: absolute
+        background-color: rgba(0,0,0,.8)
+        opacity: 0
+        display: flex
+        justify-content: center
+        align-items: center
+        color: white
+        transition: opacity 400ms
       &:hover
-        opacity: .8
         cursor: pointer
+        .dark-layer
+          opacity: .8
       +small-devices
         float: left
         width: 45%

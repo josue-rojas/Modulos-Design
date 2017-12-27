@@ -6,7 +6,7 @@
     </div>
     <div class='images'>
       {% for image in site.data[page.data_file].partials[id].images %}
-      <a class='image' style='background-image:url({{image.src}})' href='{{image.link}}'  target='_blank'></a>
+        <a class='image' style='background-image:url({{image.src}})' href='{{image.link}}'  target='_blank'><div class='dark-layer'>{{image.text}}</div></a>
       {% endfor %}
     </div>
     </div>

@@ -76,7 +76,9 @@
         -
           src: '/resources/images/example1.jpg'
           link: 'http://josuerz.xyz'
+          text: "Josue's Portfolio"
         -
           src: '/resources/images/example2.jpg'
           link: 'http://dream-deferred.xyz'
+          text: 'A Dream Deferred'
       id: 4
