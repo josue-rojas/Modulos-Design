@@ -1,7 +1,6 @@
 ### About \_includes/aesthetic-gallery
 
-<img src='https://github.com/josuerojasrojas/Modulos-Design/blob/master/docs/Partial-aesthetic-gallery?raw=true'>
-
+<img src='https://github.com/josuerojasrojas/Modulos-Design/blob/master/docs/Partial-aesthetic-gallery.png?raw=true'>
 This partial is for a gallery of (link)images in <strong>aesthetic layout only</strong>.
 
 In the data file(!TODO LINK ABOUT DATA FILES) it should look and include (assumes you have all other things that aesthetic layout needs):
