@@ -1,0 +1,94 @@
+$closeSize: 1.5rem
+
+.image-click
+  top: 0
+  width: 100vw
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  position: fixed
+  opacity: 0
+  transition: opacity 400ms
+  z-index: -10
+  // background: linear-gradient(to bottom right, rgba(212, 190, 255, 0.52), rgba(95, 219, 255, 0.65))
+  background-color: rgba(0,0,0,.8)
+  .image-wrapper
+    padding: 20px
+    padding-top: 10px
+    background-color: rgba(0,0,0,.7)
+    width: 90vw
+    display: flex
+    flex-direction: column
+    align-items: center
+    .close
+        font-size: 1.5rem
+        font-weight: 700
+        line-height: 1
+        color: #000
+        text-shadow: 0 1px 0 #fff
+        opacity: .85
+        background: url('/resources/svg/x.svg')
+        width: $closeSize
+        height: $closeSize
+        background-size: 100%
+        background-position: center
+        cursor: pointer
+        margin-left: auto
+        margin-bottom: 5px
+        &:hover
+          opacity: .75
+    img
+      margin: auto
+      width: auto
+      height: auto
+      max-width: 100%
+      max-height: 55vh
+    +medium-devices
+      width: 60vw
+      .close
+        width: 2rem
+        height: 2rem
+  &.show
+    z-index: 10
+    opacity: 1
+
+.gallery-wrapper
+  padding-top: 20px
+  padding-bottom: 20px
+  display: flex
+  justify-content: center
+  align-items: center
+  min-height: calc(100vh - 40px)
+.gallery
+  border-radius: 5px
+  background-color: rgba(0,0,0,.4)
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 30px
+  padding-bottom: 10px
+  width: 95vw
+  margin: auto
+  display: table
+  transition: opacity 400ms
+  .image
+    width: 90%
+    height: 200px
+    float: left
+    margin: auto 5% 20px
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    cursor: pointer
+    +medium-devices
+      width: 40%
+      margin: auto 5% 20px
+    +large-devices
+      width: 25%
+      height: 225px
+      margin: auto 4.1666% 20px
+      &:last-child:nth-child(3n+1)
+        margin-left: 37.3999%
+      // &:nth-child(1):nth-last-child(2),
+      // &:nth-child(2):nth-last-child(1)

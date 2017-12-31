@@ -1,0 +1,66 @@
+---
+  sass:
+    - "defaults.sass"
+    - "sizes.sass"
+    - "mixins.sass"
+    - "column-gallery-3v2.sass"
+  coffee:
+    - "main.coffee"
+    - "column-gallery-3v2.coffee"
+  js:
+    - "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+  partials:
+    -
+      partial-name: "column-gallery-3v2"
+      images:
+        -
+          image: '/resources/images/Yegeta/yegetaPic/img0.JPG'
+        -
+          image: '/resources/images/Yegeta/yegetaPic/img1.JPG'
+        -
+          image: '/resources/images/Yegeta/yegetaPic/img2.JPG'
+        -
+          image: '/resources/images/Yegeta/yegetaPic/img3.JPG'
+        -
+          image: '/resources/images/Yegeta/yegetaPic/img4.JPG'
+        -
+          image: '/resources/images/Yegeta/yegetaPic/img5.JPG'
+        -
+          image: '/resources/images/Yegeta/yegetaPic/img6.JPG'
+        -
+          image: '/resources/images/Yegeta/yegetaPic/img7.JPG'
+        -
+          image: '/resources/images/Yegeta/yegetaPic/img8.JPG'
+        -
+          image: '/resources/images/Yegeta/yegetaPic/img9.JPG'
+        -
+          image: '/resources/images/Yegeta/yegetaPic/img10.JPG'
+        -
+          image: '/resources/images/Yegeta/yegetaPic/img11.JPG'
+        -
+          image: '/resources/images/Yegeta/yegetaPic/img12.JPG'
+        -
+          image: '/resources/images/Yegeta/yegetaPic/img13.JPG'
+        -
+          image: '/resources/images/Yegeta/yegetaPic/img14.JPG'
+        -
+          image: '/resources/images/Yegeta/yegetaPic/img15.JPG'
+        -
+          image: '/resources/images/Yegeta/yegetaPic/img16.JPG'
+        -
+          image: '/resources/images/Yegeta/yegetaPic/img17.JPG'
+        -
+          image: '/resources/images/Yegeta/yegetaPic/img18.JPG'
+        -
+          image: '/resources/images/Yegeta/yegetaPic/img19.JPG'
+        -
+          image: '/resources/images/Yegeta/yegetaPic/img20.JPG'
+        -
+          image: '/resources/images/Yegeta/yegetaPic/img21.JPG'
+        -
+          image: '/resources/images/Yegeta/yegetaPic/img22.JPG'
+        -
+          image: '/resources/images/Yegeta/yegetaPic/img23.JPG'
+        -
+          image: '/resources/images/Yegeta/yegetaPic/img24.JPG'
+      id: 0

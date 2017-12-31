@@ -1,0 +1,14 @@
+<!-- this is meant to replace column-gallery-3 so its suppose to be remove later -->
+<div class='image-click'>
+  <div class='image-wrapper'>
+    <div class='close' onclick='closeImage()'></div>
+    <img id='actual-image' src=''>
+  </div>
+</div>
+<div class='gallery-wrapper'>
+  <div class='gallery'>
+    {% for imageInfo in site.data[page.data_file].partials[id].images %}
+      <div class='image' style='background-image:url({{imageInfo.image}})' data-image='{{imageInfo.image}}'></div>
+    {% endfor %}
+  </div>
+</div>
