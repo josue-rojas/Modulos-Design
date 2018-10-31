@@ -1,0 +1,73 @@
+---
+  sass:
+    - "defaults.sass"
+    - "sizes.sass"
+    - "mixins.sass"
+    - "default-navbar.sass"
+    - "slide-slideshow.sass"
+    - "footer.sass"
+    - "CustomSass/Other.sass"
+  coffee:
+    - "main.coffee"
+    - "footer.coffee"
+    - "default-navbar.coffee"
+  js:
+    - "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+  partials:
+    -
+      partial-name: "default-navbar"
+      banner:
+        background-image: 'resources/images/Yegeta/banner.jpeg'
+        text: 'And he said to them, “Go into all the world and proclaim the gospel to the whole creation" - Mark 16:15'
+      title: 'Focus Ministry'
+      title-link: '/'
+      active-link: 'Home'
+      links:
+        -
+          title: 'Home'
+          link: '/'
+        -
+          title: 'About'
+          link: '#'
+        -
+          title: 'Ministry'
+          link: '#home'
+        -
+          title: 'Discipleship'
+          link: '#home'
+        -
+          title: 'Media'
+          link: '#home'
+        -
+          title: 'Contact'
+          link: '#home'
+        -
+          title: 'Gallery'
+          link: '#home'
+      id: 0
+    -
+      partial-name: 'slide-slideshow'
+      images:
+        - "/resources/images/other/picture/img0.jpg"
+        - "/resources/images/other/picture/img1.jpg"
+        - "/resources/images/other/picture/img2.jpg"
+        - "/resources/images/other/picture/img3.jpg"
+        - "/resources/images/other/picture/img4.jpg"
+        - "/resources/images/other/picture/img5.jpg"
+        - "/resources/images/other/picture/img6.jpg"
+        - "/resources/images/other/picture/img7.jpg"
+        - "/resources/images/other/picture/img8.jpg"
+        - "/resources/images/other/picture/img9.jpg"
+        - "/resources/images/other/picture/img10.jpg"
+        - "/resources/images/other/picture/img11.jpg"
+      id: 1
+    -
+      partial-name: 'footer'
+      social:
+        Facebook: 'https://www.facebook.com/whumaso'
+        Instagram: '#'
+        WhatsApp: 'https://api.whatsapp.com/send?phone=12675284014'
+        Twitter: '#'
+      main-text: 'Focus Ministry © 2017'
+      sub-text: '<a href="http://modulos-design.com">Developed by Modulos-Design</a>'
+      id: 2

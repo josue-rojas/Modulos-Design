@@ -1,0 +1,32 @@
+$hover-color: white
+$light: gray
+$dark: #00456b
+$darkest: #00273d
+
+
+body
+  background-color: $dark
+
+.banner
+  .banner-text
+    font-weight: 400
+    color: white
+
+.default-nav
+  background-color: $light
+  .links .link-list .link:not(.active):hover
+    border-left: 1px solid transparent
+    border-right: 1px solid transparent
+    color: $hover-color
+
+.slide-slideshow
+  .real-images, .marquee-images
+    .image
+      animation: marquee 30s linear infinite
+
++keyframes(marquee)
+  100%
+    transform: translateX(-700%)
+
+.footer
+  background-color: $light

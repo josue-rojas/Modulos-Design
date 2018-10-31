@@ -2,15 +2,17 @@
     "coffee": {
         "aesthetic": [
             "modulos-design.yml"
-        ],
-        "coffee": [],
+        ], 
+        "coffee": [], 
         "default-navbar": [
-            "example1.yml",
-            "YegetaMain.yml"
-        ],
+            "example1.yml", 
+            "YegetaMain.yml", 
+            "Focus.yml"
+        ], 
         "footer": [
             "example1.yml", 
-            "YegetaMain.yml"
+            "YegetaMain.yml", 
+            "Focus.yml"
         ], 
         "main": [
             "scrollexample.yml", 
@@ -19,20 +21,21 @@
             "modulos-design.yml", 
             "simple.yml", 
             "YegetaMain.yml", 
-            "getenet.yml"
+            "getenet.yml", 
+            "Focus.yml"
         ], 
         "scrollSite": [
             "scrollexample.yml"
-        ],
+        ], 
         "simple": [
             "simple.yml", 
             "getenet.yml"
         ], 
         "slideshow": [
-            "example1.yml",
+            "example1.yml", 
             "cat.yml"
         ]
-    },
+    }, 
     "sass": {
         "aesthetic": [
             "modulos-design.yml"
@@ -42,18 +45,19 @@
         ], 
         "aesthetic-map-box": [
             "modulos-design.yml"
-        ],
+        ], 
         "aesthetic-simple-box": [
             "modulos-design.yml"
-        ],
-        "column-box-2": [],
+        ], 
+        "column-box-2": [], 
         "column-gallery-3": [
             "example1.yml"
-        ],
+        ], 
         "default-navbar": [
-            "example1.yml",
-            "YegetaMain.yml"
-        ],
+            "example1.yml", 
+            "YegetaMain.yml", 
+            "Focus.yml"
+        ], 
         "defaults": [
             "modulos-design.yml", 
             "simple.yml", 
@@ -61,16 +65,18 @@
             "scrollexample.yml", 
             "example1.yml", 
             "YegetaMain.yml", 
-            "getenet.yml"
+            "getenet.yml", 
+            "Focus.yml"
         ], 
         "footer": [
             "example1.yml", 
-            "YegetaMain.yml"
+            "YegetaMain.yml", 
+            "Focus.yml"
         ], 
         "full-gallery": [
             "fullgallery.yml"
-        ],
-        "map-box": [],
+        ], 
+        "map-box": [], 
         "mixins": [
             "scrollexample.yml", 
             "example1.yml", 
@@ -78,13 +84,14 @@
             "modulos-design.yml", 
             "simple.yml", 
             "YegetaMain.yml", 
-            "getenet.yml"
+            "getenet.yml", 
+            "Focus.yml"
         ], 
         "navbar": [], 
         "scrollSite": [
             "scrollexample.yml"
-        ],
-        "service": [],
+        ], 
+        "service": [], 
         "simple": [
             "simple.yml", 
             "getenet.yml"
@@ -96,11 +103,13 @@
             "modulos-design.yml", 
             "simple.yml", 
             "YegetaMain.yml", 
-            "getenet.yml"
+            "getenet.yml", 
+            "Focus.yml"
         ], 
         "slide-slideshow": [
-            "YegetaMain.yml"
-        ],
+            "YegetaMain.yml", 
+            "Focus.yml"
+        ], 
         "slideshow": [
             "example1.yml"
         ]
